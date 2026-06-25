@@ -1,0 +1,25 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    container_name: minecraft-survival
+    restart: no
+    environment:
+      TYPE: NEOFORGE
+      VERSION: "1.21.1"
+      MEMORY: "8G"
+      EULA: "TRUE"
+      RCON_PASSWORD: "${RCON_PASSWORD}"
+      ENABLE_RCON: "true"
+      RCON_PORT: "25575"
+      BIND_ADDRESS: "127.0.0.1"
+    volumes:
+      - ./worlds/survival:/data
+    ports:
+      - "127.0.0.1:25565:25565"
+      - "127.0.0.1:25575:25575"
+    stdin_open: true
+    tty: true
+
+networks:
+  default:
+    driver: bridge
