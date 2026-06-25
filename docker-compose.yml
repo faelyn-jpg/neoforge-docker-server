@@ -1,7 +1,7 @@
+---
 services:
-  minecraft:
+  survival:
     image: itzg/minecraft-server
-    container_name: minecraft-survival
     restart: no
     environment:
       TYPE: NEOFORGE
@@ -11,7 +11,6 @@ services:
       RCON_PASSWORD: "${RCON_PASSWORD}"
       ENABLE_RCON: "true"
       RCON_PORT: "25575"
-      BIND_ADDRESS: "127.0.0.1"
     volumes:
       - ./worlds/survival:/data
     ports:
@@ -20,6 +19,44 @@ services:
     stdin_open: true
     tty: true
 
-networks:
-  default:
-    driver: bridge
+  creative:
+    image: itzg/minecraft-server
+    restart: no
+    environment:
+      TYPE: NEOFORGE
+      VERSION: "1.21.1"
+      MEMORY: "4G"
+      EULA: "TRUE"
+      RCON_PASSWORD: "${RCON_PASSWORD}"
+      ENABLE_RCON: "true"
+      RCON_PORT: "25575"
+      LEVEL_TYPE: FLAT
+      GENERATOR_SETTINGS: '{
+        "layers":
+          [
+            {
+              "block":"minecraft:bedrock",
+              "height":1
+            },
+            {
+              "block":"minecraft:stone",
+              "height":150
+            },
+            {
+              "block":"minecraft:dirt",
+              "height":15
+            },
+            {
+              "block":"minecraft:grass_block",
+              "height":1
+            }
+          ],
+        "biome":"minecraft:desert"
+      }'
+    volumes:
+      - ./worlds/creative:/data
+    ports:
+      - "127.0.0.1:25566:25565"
+      - "127.0.0.1:25576:25575"
+    stdin_open: true
+    tty: true
