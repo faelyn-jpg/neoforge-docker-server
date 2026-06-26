@@ -1,6 +1,7 @@
 ---
 services:
   survival:
+    container_name: survival
     image: itzg/minecraft-server
     restart: no
     environment:
@@ -20,6 +21,7 @@ services:
     tty: true
 
   creative:
+    container_name: creative
     image: itzg/minecraft-server
     restart: no
     environment:
