@@ -1,4 +1,6 @@
 .env
+.env.s9
 *.log
 backups/
 worlds/
+config.json

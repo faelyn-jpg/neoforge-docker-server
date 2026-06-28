@@ -1,5 +1,5 @@
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 from discord import app_commands
 from dotenv import load_dotenv
 from mcrcon import MCRcon
@@ -7,6 +7,10 @@ import os
 import docker
 import asyncio
 import time
+import json 
+
+with open("../config/config.json") as f:
+    config = json.load(f)
 
 client = docker.from_env()
 load_dotenv("../.env")
@@ -15,6 +19,11 @@ intents.message_content = True
 intents.members = True
 
 bot = commands.Bot(command_prefix="/", intents=intents)
+
+idle_counts = {
+        "survival": 0,
+        "creative": 0,
+        }
 
 async def wait_for_server(container, timeout=60):
     start = time.time()
@@ -25,12 +34,53 @@ async def wait_for_server(container, timeout=60):
         await asyncio.sleep(3)
     return False
 
+async def is_server_empty(target_server):
+    try:
+        port = config["servers"][target_server]["rcon_port"]
+        with MCRcon("127.0.0.1", os.getenv("RCON_PASSWORD"), port=port) as rcon:
+            response= rcon.command("list")
+            player_count = int(response.split()[2])
+            return player_count == 0
+    except Exception as e:
+        print (e)
+        return "offline"
+
+async def handle_idle_server(target_server):
+    server_empty = await is_server_empty(target_server)
+    if server_empty == "offline": 
+        return
+    elif server_empty:
+       idle_counts[target_server] += 1 
+    else: 
+        idle_counts[target_server] = 0
+    if idle_counts[target_server] >= 5:
+        idle_counts[target_server] = 0
+        client.containers.get(target_server).stop(timeout=30)
+        return "stop server"
+
+@tasks.loop(seconds=300)
+async def poll_survival():
+    try:
+        await handle_idle_server("survival")
+    except Exception as e:
+        print(e)
+
+@tasks.loop(seconds=300)
+async def poll_creative():
+    try:
+        await handle_idle_server("creative")
+    except Exception as e:
+        print(e)
+
+
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user}")
     try:
         synced = await bot.tree.sync()
         print(f"Synced {len(synced)} commands")
+        poll_survival.start()
+        poll_creative.start()
     except Exception as e:
         print(e)
 
