@@ -35,6 +35,7 @@ idle_counts = {
 boot_time = datetime.now(timezone.utc)
 remote_wake = False
 AUTO_SHUTDOWN_DISABLED = "/tmp/no_shutdown"
+server_starting = False
 
 def is_plex_active():
     try:
@@ -68,7 +69,9 @@ def are_users_logged_in():
 async def safe_to_shutdown():
     if os.path.exists(AUTO_SHUTDOWN_DISABLED):
         return False
-    grace_period = not remote_wake and (datetime.now(timezone.utc) - boot_time).total_seconds() < 1800
+    universal_grace = (datetime.now(timezone.utc) - boot_time).total_seconds() < 180
+    physical_grace = not remote_wake and (datetime.now(timezone.utc) - boot_time).total_seconds() < 1800
+    grace_period = universal_grace or physical_grace
     samba_active = is_samba_active()
     print(f'samba active? {samba_active}')
     plex_active = is_plex_active()
@@ -76,7 +79,7 @@ async def safe_to_shutdown():
     users_logged_in = are_users_logged_in()
     survival_safe = await is_server_empty("survival")
     creative_safe = await is_server_empty("creative")
-    return not (samba_active or plex_active or users_logged_in or grace_period) and survival_safe and creative_safe
+    return not (samba_active or plex_active or users_logged_in or grace_period or server_starting) and survival_safe and creative_safe
 
 
 async def wait_for_server(container, timeout=60):
@@ -172,22 +175,27 @@ async def read_queue():
 
 
 async def start_server(target_server, on_running=None, on_started=None, on_failed=None):
+    global server_starting
     try: 
         container = client.containers.get(target_server)
         if container.status == "running":
             if on_running:
                 await on_running()
             return
+        server_starting = True
         container.start()
         success = await wait_for_server(container)
+        server_starting = False
         if success:
             if on_started:
                 await on_started()
         else:
             container.stop(timeout=30)
+            server_starting = False
             if on_failed:
                 await on_failed()
     except Exception as e:
+        server_starting = False
         print(f'Error starting {target_server}: {e}')
 
 async def stop_server(target_server, on_exited=None, on_stop=None, on_failed=None):
