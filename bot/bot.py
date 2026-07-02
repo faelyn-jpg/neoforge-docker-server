@@ -216,14 +216,13 @@ async def on_ready():
     try:
         synced = await bot.tree.sync()
         print(f"Synced {len(synced)} commands")
-        await safe_to_shutdown()
         queue = await read_queue()
         if queue and len(queue) > 0:
             for server in queue:
                 await start_server(server)
         poll.start()
     except Exception as e:
-        print(f'Error initilzing bot: {e}')
+        print(f'Error initialising bot: {e}')
 
 @bot.tree.command(name="status", description="Check the survival server status")
 async def status(interaction: discord.Interaction):
@@ -290,15 +289,6 @@ async def enable_shutdown(interaction: discord.Interaction):
     else:
         os.remove("/tmp/no_shutdown")
         await interaction.response.send_message("Automatic shutdown re-enabled.")
-#@bot.tree.command(name="say", description="Say a thing")
-#@app_commands.default_permissions(discord.Permissions(administrator=True))
-#async def say(interaction: discord.Interaction):
-#    try:
-#        active_users = check_active_users()
-#        await interaction.response.send_message(f"There are {len(active_users)} logged into your PC.")
-#    except Exception:
-#        await interaction.response.send_message(f"I'm not sure....")
-
 token = os.getenv("DISCORD_TOKEN")
 if not token:
     raise ValueError("DISCORD_TOKEN not set in .env")
