@@ -36,6 +36,96 @@ boot_time = datetime.now(timezone.utc)
 remote_wake = False
 AUTO_SHUTDOWN_DISABLED = "/tmp/no_shutdown"
 server_starting = False
+listen_on_stop = True
+
+class MCLoginListener: 
+    def __init__(self, port, container_name):
+        self.port = port
+        self.container_name = container_name
+        self.active = False
+
+    async def bind(self):
+        container = client.containers.get(self.container_name)
+        if container.status == "running": 
+            return
+        self.server = await asyncio.start_server(self.handle_connection, '0.0.0.0', self.port)
+        self.active = True
+
+    async def unbind(self):
+        if self.server:
+            self.server.close()
+            await self.server.wait_closed()
+            self.server = None
+            self.active = False
+
+    async def handle_connection(self, reader, writer):
+        data = await reader.read(4096)
+        try:
+            offset = 0
+            _, offset = read_varint(data, offset)
+            packet_id, offset = read_varint(data, offset)
+            if packet_id == 0x00:
+                _, offset = read_varint(data, offset)
+                addr_length, offset = read_varint(data, offset)
+                offset += addr_length
+                offset += 2
+                next_state, offset = read_varint(data, offset)
+                if next_state == 2:
+                    message = config["servers"][self.container_name]["starting_message"]
+                    disconnect = build_disconnect(message)
+                    writer.write(disconnect)
+                    await writer.drain()
+                    writer.close()
+                    await writer.wait_closed()
+                    asyncio.create_task(self.unbind())
+                    asyncio.create_task(start_server(self.container_name))
+                    return
+        except Exception as e:
+            print(f"Error handling connection: {e}")
+        finally:
+            writer.close()
+
+    async def start(self):
+            await self.bind()
+
+    async def stop(self):
+            await self.unbind()
+
+def read_varint(data: bytes, offset: int) -> tuple[int, int]:
+    result = 0
+    shift = 0
+    while True: 
+        byte = data[offset]
+        offset += 1
+        result |= (byte & 0x7F) << shift
+        if not (byte & 0x80):
+            break
+        shift += 7
+    return result, offset
+
+def write_varint(value):
+    result = b""
+    while True:
+        byte = value & 0x7F
+        value >>= 7
+        if value != 0:
+            byte |= 0x80
+        result += bytes([byte])
+        if value == 0:
+            break
+    return result
+
+def build_disconnect(message):
+    json_message = json.dumps({"text": message}).encode('utf-8')
+    packet_id = write_varint(0x00)
+    message_data = write_varint(len(json_message)) + json_message
+    payload = packet_id + message_data
+    return write_varint(len(payload)) + payload
+
+listeners = {
+        name: MCLoginListener(config["servers"][name]["mc_port"], name)
+        for name in config["servers"]
+        }
 
 def is_plex_active():
     try:
@@ -60,9 +150,10 @@ def is_samba_active():
 
 def are_users_logged_in():
     try: 
-        result = subprocess.run(['who'], capture_output=True, text=True)
-        users = result.stdout.strip().split('\n')
-        return len([user.split()[0] for user in users if user]) > 0
+        result = subprocess.run(['loginctl', 'list-sessions'], capture_output=True, text=True)
+        lines = result.stdout.strip().split('\n')
+        active = [line for line in lines if 'user' in line.split()]
+        return active
     except Exception as e:
         return f'Users Logged in : Error {e}'
 
@@ -104,6 +195,7 @@ async def is_server_empty(target_server):
 
 async def handle_idle_server(target_server):
     server_empty = await is_server_empty(target_server)
+    print(f"{target_server} empty: {server_empty}, idle count: {idle_counts[target_server]}")
     if server_empty == "offline": 
         return
     elif server_empty:
@@ -138,7 +230,13 @@ async def poll():
     try:
         await poll_creative()
         await poll_survival()
-        if await safe_to_shutdown():
+        for listener in listeners.values():
+            container = client.containers.get(listener.container_name)
+            if container.status == "exited" and not server_starting and not listener.active:
+                await listener.start()
+        shutdown_safe = await safe_to_shutdown()
+        print(f"Safe to shutdown: {shutdown_safe}")
+        if shutdown_safe:
             await shutdown()
     except Exception as e:
         print(f'Error polling: {e}')
@@ -207,6 +305,8 @@ async def stop_server(target_server, on_exited=None, on_stop=None, on_failed=Non
             return
         await asyncio.to_thread(container.stop, timeout=30)
         container.reload()
+        if listen_on_stop: 
+            await listeners[target_server].start()
         if container.attrs["State"]["ExitCode"] == 137:
             if on_failed:
                 await on_failed()
@@ -221,6 +321,8 @@ async def on_ready():
     print(f"Logged in as {bot.user}")
     global remote_wake
     remote_wake = await was_remote_wake()
+    await listeners["survival"].start()
+    await listeners["creative"].start()
     try:
         synced = await bot.tree.sync()
         print(f"Synced {len(synced)} commands")
@@ -268,7 +370,9 @@ async def start(interaction: discord.Interaction, target_server: str = "survival
     app_commands.Choice(name="survival", value="survival"),
     app_commands.Choice(name="creative", value="creative"),
 ])
-async def stop(interaction: discord.Interaction, target_server: str = "survival"):
+async def stop(interaction: discord.Interaction, target_server: str = "survival", no_listen: bool = False):
+    global listen_on_stop
+    listen_on_stop = not no_listen
     try:
         container = client.containers.get(target_server)
         if container.status == "exited":
