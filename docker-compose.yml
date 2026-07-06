@@ -3,7 +3,7 @@ services:
   survival:
     container_name: survival
     image: itzg/minecraft-server
-    restart: no
+    restart: "no"
     environment:
       TYPE: NEOFORGE
       VERSION: "1.21.1"
@@ -23,7 +23,7 @@ services:
   creative:
     container_name: creative
     image: itzg/minecraft-server
-    restart: no
+    restart: "no"
     environment:
       TYPE: NEOFORGE
       VERSION: "1.21.1"
@@ -62,3 +62,55 @@ services:
       - "127.0.0.1:25576:25575"
     stdin_open: true
     tty: true
+
+  backup-survival:
+    image: itzg/mc-backup
+    container_name: backup-survival
+    restart: unless-stopped
+    environment:
+      BACKUP_METHOD: rsync
+      CRON_SCHEDULE: "0 14 * * *"
+      RCON_HOST: survival
+      RCON_PORT: "25575"
+      RCON_PASSWORD: "${RCON_PASSWORD}"
+      DEST_DIR: /backups
+      BACKUP_NAME: survival
+      PRUNE_BACKUPS_DAYS: "7"
+      TZ: "Pacific/Auckland"
+      PRE_BACKUP_SCRIPT: |
+        rcon-cli \
+        --host survival \
+        --port 25575 \
+        --password $$RCON_PASSWORD \
+        save-all || true
+    volumes:
+      - ./worlds/survival:/data:ro
+      - /mnt/storage/backups:/backups
+    depends_on:
+      - survival
+
+  backup-creative:
+    image: itzg/mc-backup
+    container_name: backup-creative
+    restart: unless-stopped
+    environment:
+      BACKUP_METHOD: rsync
+      CRON_SCHEDULE: "0 14 * * *"
+      RCON_HOST: creative
+      RCON_PORT: "25576"
+      RCON_PASSWORD: "${RCON_PASSWORD}"
+      DEST_DIR: /backups
+      BACKUP_NAME: creative
+      PRUNE_BACKUPS_DAYS: "7"
+      TZ: "Pacific/Auckland"
+      PRE_BACKUP_SCRIPT: |
+        rcon-cli \
+        --host creative \
+        --port 25575 \
+        --password $$RCON_PASSWORD \
+        save-all || true
+    volumes:
+      - ./worlds/creative:/data:ro
+      - /mnt/storage/backups:/backups
+    depends_on:
+      - creative
