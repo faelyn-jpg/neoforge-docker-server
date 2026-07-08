@@ -1,0 +1,13 @@
+name = "Euphonium"
+filename = "euphonium-1.0.3+1.21.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "471d9b34b6e08e8e21c35850838be8d4c8182098"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7323217
+project-id = 1402856

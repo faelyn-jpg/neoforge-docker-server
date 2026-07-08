@@ -1,0 +1,13 @@
+name = "Presence Footsteps x Sable (Aeronautics Compat)"
+filename = "pfsable-1.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "a216dfce15550c50436012283e49606c67a87e29"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8152593
+project-id = 1555269

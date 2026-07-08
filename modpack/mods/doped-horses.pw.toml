@@ -1,0 +1,13 @@
+name = "Doped Horses - Faster, Enchantable & Configurable horses"
+filename = "dopedhorses-neoforge-1.2.4-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f09b15ecc7133f62447e885dd52350d0ba417ebd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8138039
+project-id = 1215648

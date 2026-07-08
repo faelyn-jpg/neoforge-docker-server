@@ -1,0 +1,13 @@
+name = "Party Creepers"
+filename = "PartyCreepers-v21.1.1-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "39395bbf5adee8b657053ff52965b1808c7f19ef"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7204369
+project-id = 1369583

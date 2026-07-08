@@ -1,0 +1,13 @@
+name = "Calm The Leaks (CTL)"
+filename = "calmtheleaks-1.2.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d9056c202a2faf0ddf993cd6f99de7cde390467d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8052919
+project-id = 1449975

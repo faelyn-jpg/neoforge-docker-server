@@ -1,0 +1,13 @@
+name = "VanillaBackport X Farmer's Delight Compat"
+filename = "Vanilla-Backport-X-Farmer's-Delight-Compat.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "7e9b040a68c7ec5cdf057d56a85d09d9f8e9a0db"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8176955
+project-id = 1560060

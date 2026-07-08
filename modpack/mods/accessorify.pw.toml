@@ -1,0 +1,13 @@
+name = "Accessorify"
+filename = "accessorify-2.3.6+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f303961a0390f1ecf0d2a53cd81375261b6e1dfa"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7233662
+project-id = 1169634

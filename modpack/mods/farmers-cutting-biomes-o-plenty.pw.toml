@@ -1,0 +1,13 @@
+name = "Farmer's Cutting: Biomes O' Plenty"
+filename = "farmers-cutting-biomes-o-plenty-2.0.0-1.21.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "32633a4d1d1cae822bbeee3cd943ea0f7eeaba2b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5577829
+project-id = 1073641

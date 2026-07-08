@@ -1,0 +1,3 @@
+[general]
+	#Respawn time for downed pets
+	petRespawnTimer = 60

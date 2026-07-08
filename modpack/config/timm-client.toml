@@ -1,0 +1,28 @@
+[general]
+	#Minimum delay (in seconds)
+	# Default: 120
+	# Range: 0 ~ 600
+	minDelay = 120
+	#Maximum delay (in seconds)
+	# Default: 300
+	# Range: 0 ~ 600
+	maxDelay = 300
+	#Delay before starting fade out when changing biomes (in seconds)
+	# Default: 3
+	# Range: 3 ~ 15
+	fadeDelay = 3
+	#Duration of music fade out (in seconds)
+	# Default: 5
+	# Range: 5 ~ 10
+	fadeDuration = 5
+	#Reset delay on biome switch
+	resetDelayOnBiomeSwitch = false
+	#Print message when skipping
+	printOnSkip = true
+	#Enable debug logging (no GUI entry)
+	debugLog = false
+	#Enable structure songs playing
+	enableStructure = true
+	#Structure should fade out
+	#Allowed Values: NEVER, ON_BIOME_SWITCH
+	structureFadeOut = "NEVER"

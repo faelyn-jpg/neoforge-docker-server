@@ -1,0 +1,13 @@
+name = "Random Mob Sizes"
+filename = "randommobsizes-neoforge-1.21.1-2.2.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b815a00bd4e9c7bb046cfee2db6901ff8c7ea439"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5788833
+project-id = 555230

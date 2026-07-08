@@ -1,0 +1,13 @@
+name = "Loot Integrations: Towns and Towers"
+filename = "lootintegration_townsandtowers-1.3.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "fbefe5dcc95829b38927d552f2948a40fdc43afa"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7925289
+project-id = 1152732

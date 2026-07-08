@@ -1,0 +1,13 @@
+name = "Furber"
+author = "faelynjpg"
+version = "1.0.4"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "fce3556b6a9903aa1eaeeb9295eec6234373565d7670c591614348112028be11"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.233"

@@ -1,0 +1,13 @@
+name = "Fowl Play"
+filename = "fowlplay-1.1.2+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8e26bc0d3b648d9ecfe4dbab99b74f5494ebbaf5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7401457
+project-id = 1246320

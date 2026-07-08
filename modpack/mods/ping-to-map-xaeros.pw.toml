@@ -1,0 +1,13 @@
+name = "Ping to Map: Xaero's Minimap & Ping Wheel Addon"
+filename = "pingtomapxaeros-1.1.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "373e92bc7d9d81d96a056ce84de5cf442ec7177c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8189370
+project-id = 1551915

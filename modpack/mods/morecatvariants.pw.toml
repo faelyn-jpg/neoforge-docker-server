@@ -1,0 +1,13 @@
+name = "More Cat Variants"
+filename = "morecatvariants-neoforge-0.0.2+1.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "327ee6648f18e26124c786cd79e60b6ecc1b6007"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6804903
+project-id = 1278854

@@ -1,0 +1,13 @@
+name = "Fintastic Supreme"
+filename = "fintastic_supreme-1.0.0-mc1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8cbedb7a85489ba24ab24603e8753c375e0d40c9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8143923
+project-id = 1553548

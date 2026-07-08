@@ -1,0 +1,13 @@
+name = "Waystones Teleport Pets"
+filename = "WaystonesTeleportPets-1.2-neoforge-1.21.1.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "f8a9d21b39d9d69ed61e7689f50e43d0d644afd5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7970914
+project-id = 908310

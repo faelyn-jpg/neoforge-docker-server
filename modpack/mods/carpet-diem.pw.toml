@@ -1,0 +1,13 @@
+name = "Carpet Diem"
+filename = "carpetdiem-0.1-1.21.1NF.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "26d082a11b001b72a2b6e24403c7aa6f99dd0a4b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7142664
+project-id = 1146243

@@ -1,0 +1,13 @@
+name = "Beautiful Potions [MOD EDITION] | 2.0 UPDATE! "
+filename = "BTP-NeoForge-1.21.1-2.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ecafdcfd9480f4fd3cd37173b6d724a6f84b3dc0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7952054
+project-id = 1298070

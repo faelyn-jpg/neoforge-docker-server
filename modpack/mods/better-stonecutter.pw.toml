@@ -1,0 +1,13 @@
+name = "Better Stonecutter"
+filename = "better-stonecutter-2.0.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/F633jSZ5/versions/1X0KUVwX/better-stonecutter-2.0.1.jar"
+hash-format = "sha512"
+hash = "adb631f9b91836dd87bb4a979e2396310d0cf0f511a99056bee216e0d440fb2c09cf6f3b43e41b520e3708b71eb04bc1cb11db6efdc7c7708838f5a06b79fcd5"
+
+[update]
+[update.modrinth]
+mod-id = "F633jSZ5"
+version = "1X0KUVwX"

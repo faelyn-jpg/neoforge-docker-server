@@ -1,0 +1,13 @@
+name = "Tide's Delight"
+filename = "tidesdelight-1.21.1-1.2.0-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "663d24a241b39815dfa09d968fc3639aa6ae1949"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8049889
+project-id = 1188673

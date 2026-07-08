@@ -1,0 +1,13 @@
+name = "Create: Oh The Biomes We've Gone Compat"
+filename = "create-otbwg-compat-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "39f257a8a0251a0ba838d354fffc439850db123c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6645097
+project-id = 1285600

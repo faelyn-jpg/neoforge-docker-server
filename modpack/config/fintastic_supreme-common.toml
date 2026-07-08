@@ -1,0 +1,33 @@
+[fish_finder]
+	#Whether to show the fishing spot coordinates
+	show_position = true
+	#Whether to show the fishing spot biome
+	show_biome = true
+	#Whether to show fish probability
+	show_fish_probability = true
+	#Whether to show loot probability
+	show_loot_probability = true
+	#Whether to show crate probability
+	show_crate_probability = true
+
+[fishing_mechanics]
+	#Trigger chance of Double Catch Hook
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	double_catch_chance = 0.15
+	#Trigger chance of Multi Drop Hook
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	multi_drop_chance = 0.25
+	#Maximum extra drops of Multi Drop Hook
+	# Default: 3
+	# Range: 1 ~ 10
+	multi_drop_max_extra = 3
+	#Trigger chance per luck point for Lucky Line
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	lucky_line_luck_to_chance = 0.1
+	#Multiplier for fish escape time ( >1 = longer escape time)
+	# Default: 2.0
+	# Range: 0.1 ~ 10.0
+	lightweight_line_escape_multiplier = 2.0

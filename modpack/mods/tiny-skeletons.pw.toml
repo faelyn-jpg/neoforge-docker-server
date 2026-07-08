@@ -1,0 +1,13 @@
+name = "Tiny Skeletons"
+filename = "TinySkeletons-v21.1.0-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "454c538c783a845367755c89d0cc7377ddc475df"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5733732
+project-id = 548647

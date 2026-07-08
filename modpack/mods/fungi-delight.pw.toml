@@ -1,0 +1,13 @@
+name = "Fungi Delight (Farmers Delight Addon)"
+filename = "FungiDelight-1.21.1-1.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "823e15ce8eec094a97f7d05d3edb47b0eb1a820f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7450829
+project-id = 1394406

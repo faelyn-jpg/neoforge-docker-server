@@ -1,0 +1,13 @@
+name = "VanillaBackport: Mob Variants Compat Datapack"
+filename = "VB-MobVariantCompat1.4.1.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "885dfa18a220021915d0a5fc663997ccc2798641"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7326870
+project-id = 1385619

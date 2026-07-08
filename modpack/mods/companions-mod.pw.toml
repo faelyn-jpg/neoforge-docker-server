@@ -1,0 +1,13 @@
+name = "Companions!"
+filename = "companions-neoforge-1.21.1-1.2.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6e89967417b9fbcc16616420637c61cf2d2e6226"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8189142
+project-id = 1300341

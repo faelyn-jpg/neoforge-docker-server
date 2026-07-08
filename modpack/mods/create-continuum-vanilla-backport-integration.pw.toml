@@ -1,0 +1,13 @@
+name = "Create: Continuum (Vanilla Backport Integration)"
+filename = "create_continuum-1.0.0-1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3c8f673f522575295335767d021102dcf15f2f5f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8137708
+project-id = 1552396

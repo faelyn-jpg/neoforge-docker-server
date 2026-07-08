@@ -1,0 +1,16 @@
+[feature]
+	#Master switch. If false, no waypoint prompts are emitted on ping.
+	enabled = true
+	#If true, your own pings also create a temporary waypoint. If false, only teammates' pings do.
+	registerOwnPings = true
+
+[appearance]
+	#If true (default), the auto-created waypoint disappears at the same time as the Ping-Wheel ping:
+	#its lifetime follows Ping-Wheel's own pingDuration setting, so the in-world ping and the
+	#map waypoint vanish together. If false, the fixed 'waypointLifetimeSec' below is used.
+	syncWithPingWheel = true
+	#Manual waypoint lifetime in seconds. Only used when 'syncWithPingWheel' is false.
+	#Set to -1 for permanent waypoints (not recommended for ping use case).
+	# Default: 30
+	# Range: -1 ~ 600
+	waypointLifetimeSec = 30

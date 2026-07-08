@@ -1,0 +1,13 @@
+name = "Overweight Farming"
+filename = "OverweightFarming-1.21.1-2.2.0-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "61fb634c5be1635abbc7b92756129de449864924"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7231471
+project-id = 591666

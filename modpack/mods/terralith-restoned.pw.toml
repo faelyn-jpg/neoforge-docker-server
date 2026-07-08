@@ -1,0 +1,13 @@
+name = "Terralith ReStoned"
+filename = "Terralith_Restoned_v1.3.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "93e2ba55928926434b63d1c7fd807094d0c04f5f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7503883
+project-id = 1179585

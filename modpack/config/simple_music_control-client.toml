@@ -1,0 +1,22 @@
+stopMusicOnJukeboxUse = true
+creativeMusicInSurvival = true
+situationalMusicInCreative = true
+modifyMusicDelays = true
+# Default: 300
+# Range: > 1
+musicMinDelay = 300
+# Default: 600
+# Range: > 1
+musicMaxDelay = 600
+playMusicWhenPaused = true
+nowPlayingWidget = true
+# Default: 6
+# Range: > 1
+nowPlayingWidgetDuration = 6
+showNowPlayingWidgetInPauseMenu = true
+#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+pauseWidgetPosition = "TOP_LEFT"
+unlockSituationalMusic = false
+# Default: 70
+# Range: 1 ~ 100
+situationalMusicChance = 70
