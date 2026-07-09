@@ -1,0 +1,4 @@
+services:
+  survival:
+    environment:
+      PACKWIZ_URL: "http://172.18.0.1:8080/pack.toml"

@@ -1916,17 +1916,17 @@ metafile = true
 
 [[files]]
 file = "mods/accessorify.pw.toml"
-hash = "9dd18f58c8ec5e34ba87951efcdfd8691bb5478b13640a8fef4d6526723e48c8"
+hash = "d265ac189584179fe5ec32151e57f4ea4a1bd3ffda02a1f7c47e778266639eba"
 metafile = true
 
 [[files]]
 file = "mods/addonslib.pw.toml"
-hash = "d921cda68b79fed86082f116016a6b5513023fd2b815fea3e29fa9f28619506b"
+hash = "30931a894fd59654bf9ca72aa1f9882848fe2ad3601595896175e3e56f7be1f9"
 metafile = true
 
 [[files]]
 file = "mods/adorable-hamster-pets.pw.toml"
-hash = "6a49d2b1692246763a9f21e93b429d66620bb9f7aac0ccb12852c2041dba7486"
+hash = "d6c583a3ce0fca1399dba0a420541c7c4b6ace37e2c53855e7d3a497332bb1a5"
 metafile = true
 
 [[files]]
@@ -1946,7 +1946,7 @@ metafile = true
 
 [[files]]
 file = "mods/amendments.pw.toml"
-hash = "bf68b426ab3361b1257ff1c3a8c0355475807d5f18332eebaca7754bcef945b3"
+hash = "37e53b6dc2af8dee7c2994d79fcfc33e4d90d9481c6b0986ad7b7b29cec00979"
 metafile = true
 
 [[files]]
@@ -1986,12 +1986,12 @@ metafile = true
 
 [[files]]
 file = "mods/ars-nouveau.pw.toml"
-hash = "5150d0aebd32633617c791ecf1b3665c77ce5b17c256453e9d66a7da93cff4b1"
+hash = "0250566c915c794731744f1f41b4a876a021b9185c9a0f5f77582d90d1e17e79"
 metafile = true
 
 [[files]]
 file = "mods/ars-nouveaus-flavors-delight.pw.toml"
-hash = "b9c4cb96ca2f9ce6423d3fb25048c655fa485a7ba7b4203c90c86a9db61b25ab"
+hash = "a533288e59a527a43cfc978bd82a4eaeb157c803d9bd4dcbfc810ca16a612e58"
 metafile = true
 
 [[files]]
@@ -2011,7 +2011,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "a0f52f47c27d6ccdbee89735e459ff955ba09cdf499ef42bc901f8426be75253"
+hash = "fcadcc088675cf866ea08c4c1bbd11adccb21b1e0fe9715c37ff7f88d9a96716"
 metafile = true
 
 [[files]]
@@ -2041,7 +2041,7 @@ metafile = true
 
 [[files]]
 file = "mods/better-ping-display.pw.toml"
-hash = "c2fd5f53d8ee32c2f7a69959bf4fed00ac7e5ab3568b2bcf5c970a9b3b66969a"
+hash = "a19d5c8575b61687a192c2783ebbd4acd66919c99bfff0a6c0301ba39ae203a3"
 metafile = true
 
 [[files]]
@@ -2050,12 +2050,12 @@ hash = "67e330765f443e8f82b9e18120b1252d9dac6c2db6335fee390047dd493298d6"
 
 [[files]]
 file = "mods/better-stonecutter.pw.toml"
-hash = "84732b77760d2c56f493b8783ce01f0dde975e50c616cc83b8c0f0a71f90027a"
+hash = "2a6e7e1525b3a149949ff8a41ed4f0c9a1e0428537f26a2481fdfbfa8ec35068"
 metafile = true
 
 [[files]]
 file = "mods/biomes-o-plenty.pw.toml"
-hash = "2365220deb4cf03f5b6bab7e52fe61ff4f3532f37c2e9ed0e78a0855ef3613ac"
+hash = "f6f723c2d15da3b36a2c29408deb914f6c4bdbe4a20aa652f3f07642011fce8e"
 metafile = true
 
 [[files]]
@@ -2065,17 +2065,17 @@ metafile = true
 
 [[files]]
 file = "mods/brewin-and-chewin.pw.toml"
-hash = "3ec3f227220562968dca05112e168c27e9027f43ec53bef1015c0c342b4bab19"
+hash = "816ae53b09d3b3c2e3b4e74470bf2332fcde8a5ae322e1a39bd11656ef1fa8e6"
 metafile = true
 
 [[files]]
 file = "mods/building-wands.pw.toml"
-hash = "b14c9cf09a99c0494f608f4fb70ed3fee309d64d8e9d9b937bd175e632e6ac83"
+hash = "b77caa8be8129dddb80dd2c346c562103bd584d54aa1ca67b4f755008bbd7792"
 metafile = true
 
 [[files]]
 file = "mods/c2me.pw.toml"
-hash = "726334adfd226c815c78ecf79169a0db3c5079efbb9671d8051bfc559c8b4359"
+hash = "fd617164fbf0d064f8b544c83e5184cfd2a00774af7ea3a8a02addd764138714"
 metafile = true
 
 [[files]]
@@ -2120,7 +2120,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "b892a5f29bd67009afe337fce5f786c1eb6ba75e31d8300307757db1fce48d8b"
+hash = "e95dae6d96a6fd51e34a470f3950e543434007afb9d07c3adc07507bbea33219"
 metafile = true
 
 [[files]]
@@ -2130,7 +2130,7 @@ metafile = true
 
 [[files]]
 file = "mods/companions-mod.pw.toml"
-hash = "61c990fb672f97607b5b0cfdff21b46385f78d6ccda24deffcfbf5f231740a52"
+hash = "6fffbc2f9826b348455871d9858a8f550eb6e4ffd046acccc9446ffda53c040f"
 metafile = true
 
 [[files]]
@@ -2170,7 +2170,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-aeronautics.pw.toml"
-hash = "6cabae8686cf85c826d1280f00e00d67bb7672d353f669bea9f3775de39dd378"
+hash = "59beba57945e374108e22789e8fc32d2758174929ebd9bf17fc139956dc32e30"
 metafile = true
 
 [[files]]
@@ -2220,7 +2220,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-enchantment-industry.pw.toml"
-hash = "be0036035951859b6dd8ae612acbbdd403f838c284a180459d36726ca259933d"
+hash = "35f89136e9bed113613f23c93762ee08c6a9148fca951aabfe2cccb930a993c9"
 metafile = true
 
 [[files]]
@@ -2275,7 +2275,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-stuff-additions.pw.toml"
-hash = "0ec6556e7e1c8d7b5ee522656adcd51ff59629e589409128241794f7d677c422"
+hash = "96dc7ffd7d68f94f16173368724dfe47ef8f67efa9269e89c59eae8dafe75eea"
 metafile = true
 
 [[files]]
@@ -2315,7 +2315,7 @@ metafile = true
 
 [[files]]
 file = "mods/cristel-lib.pw.toml"
-hash = "53ebc30c614ff6ab0a7c3203e442faa72d54fe8b658f0a3845853f9bc4ea1236"
+hash = "c76891545fb28fbcd2c280cf451ad98a463f8a17a50e0eee8a33b3b410743711"
 metafile = true
 
 [[files]]
@@ -2325,7 +2325,7 @@ metafile = true
 
 [[files]]
 file = "mods/cupboard.pw.toml"
-hash = "4d93d75137d2bb19a1a1f68e494a401dd7e24edff1e5a06f2c17330d8e3431af"
+hash = "0eaf99546b07ea456f4b8f198b646a06f5b9446fb735494f034871f70d36c569"
 metafile = true
 
 [[files]]
@@ -2350,7 +2350,7 @@ metafile = true
 
 [[files]]
 file = "mods/display-delight.pw.toml"
-hash = "6e644e379f0f938c8c01902b3320c3aa49b8cf49a534ed32fc0d48aaa6efc909"
+hash = "4bf529c0b36ea0e8e01dc12e80f69a703948d28f7587460526ff0a1330f9e891"
 metafile = true
 
 [[files]]
@@ -2360,7 +2360,7 @@ metafile = true
 
 [[files]]
 file = "mods/dynamic-fps.pw.toml"
-hash = "e2a3aca8101a179153b92e99000a10d06e4b5d285d358fbe457a53690d12dab5"
+hash = "8bc57beb0d3d0c34a2ac8c50d70490623dd350ce62d0ccde9a16a1b000a514b1"
 metafile = true
 
 [[files]]
@@ -2375,7 +2375,7 @@ metafile = true
 
 [[files]]
 file = "mods/enchantment-descriptions.pw.toml"
-hash = "65b3488ff2104f458ab5fa16a7a274157f5d012d7013a9c24437ae9ca6c11d55"
+hash = "11a152babe9dd0a19768145d01c521119ee95a21ce50a67162ecf445cef22900"
 metafile = true
 
 [[files]]
@@ -2403,7 +2403,7 @@ hash = "b2e396543c678b8378a2d5557a0cd3d24790364bff7e96edaf17921112d6176b"
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "346f28e2ec19543a6b410bf2cf5389401bc6d1aa0189e39d07bf11d64d8bd321"
+hash = "f17b239b9bbf7ba084f33d71699082f112ffdb77a3bd39af877c6a0da961ede1"
 metafile = true
 
 [[files]]
@@ -2413,32 +2413,32 @@ metafile = true
 
 [[files]]
 file = "mods/euphonium.pw.toml"
-hash = "e94fdf5e1c1f00cbaa511863a010a430d1d1be2e6f3e43df09e28fdaee5b5449"
+hash = "80646cb568fc84be48912cab31938d89a58d08050a44d1a2a534168aeb9a77c4"
 metafile = true
 
 [[files]]
 file = "mods/every-compat.pw.toml"
-hash = "654febef94c8537e24a109798e7d38808f5601a9db6ceaede2b1177ece5080df"
+hash = "e34fd636882f16ffab12093e713acccfa1f60e2fdd70e64e634605d53303f639"
 metafile = true
 
 [[files]]
 file = "mods/extrasounds-forge.pw.toml"
-hash = "074107f75703c864591e89357baab5fe6d1b8941e01f35d71d0002e5a68075cb"
+hash = "8cd91776c68a8f1c0e17c6984dd372491fc31a498f73a59afab765eeafe8b4d3"
 metafile = true
 
 [[files]]
 file = "mods/farmers-cutting-biomes-o-plenty.pw.toml"
-hash = "a101c373e17927dd48edddc3b41d864308b0fdc5e07c605450183bb597315830"
+hash = "ff88220e09c9e756b58dadd09151e5e8f313e2f9e86d3a33006a0649687c7f7e"
 metafile = true
 
 [[files]]
 file = "mods/farmers-cutting-oh-the-biomes-weve-gone.pw.toml"
-hash = "44030876800c6a4cb0be4f78a906db0c230dea8f60007afbbd67262f194e0751"
+hash = "d306d1ee0dc5d82e77cf51dc217a55b72e19dd8566c8e15699aa6dc549424083"
 metafile = true
 
 [[files]]
 file = "mods/farmers-cutting-quark.pw.toml"
-hash = "cc66b825a1a62bc19cfc394314eb21ef17fc9aa4f0e5dc2e111be5ebd319dfdf"
+hash = "14cf6c2a169d531aa0e1988cc06aaac5ac5f5cb80cc6e75f1d3ab08fa2ec0875"
 metafile = true
 
 [[files]]
@@ -2473,7 +2473,7 @@ metafile = true
 
 [[files]]
 file = "mods/flerovium.pw.toml"
-hash = "95df4486bc36bbd8db5aa46c91e437fc76092382ede25768330f02f0171fad22"
+hash = "774884dae409a13fc957c5f5e92178079fe813de4046b779d202059cacc57c20"
 metafile = true
 
 [[files]]
@@ -2483,7 +2483,7 @@ metafile = true
 
 [[files]]
 file = "mods/fowlplay.pw.toml"
-hash = "c0d02383071f4bdb80181f8de0d706841c44d7aac8bcd12571a44e444f52f17d"
+hash = "5e1ea81a7ea6c886b5678b4fd4ab40175aa970a54f2f722f4cc6ddc1f2c27fc7"
 metafile = true
 
 [[files]]
@@ -2493,12 +2493,12 @@ metafile = true
 
 [[files]]
 file = "mods/free-cam.pw.toml"
-hash = "1ec51dc8dad86f92dc52372f4491ce641b99a6ed018306b293b9cf17c3c65c6a"
+hash = "6cb0747f46236c96b3132b4d8bee0fd2b1409340dace5dc7b336a5534fa597f5"
 metafile = true
 
 [[files]]
 file = "mods/friends-for-life.pw.toml"
-hash = "5da93e077ed11eeb0b59fc381f459bede01d7b883e0b13f726e7a2ba4eaeec97"
+hash = "8418e0fced5c633ee1faf3a877a6f355ee7f313b264d94578850f9590f3e549f"
 metafile = true
 
 [[files]]
@@ -2518,7 +2518,7 @@ metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
-hash = "68e15ffc71a84261e0dbbb317329788c21a7b9eb8060687dc8a51008cc3029fe"
+hash = "65ac18556f91ebb4f303a39731e93e94ffa94ddc690b0fbf35346bdcb3b05919"
 metafile = true
 
 [[files]]
@@ -2538,17 +2538,17 @@ metafile = true
 
 [[files]]
 file = "mods/gravestone-x-curios-api-compat.pw.toml"
-hash = "bac64d66334b78287575f7717aeb542bf4871c0fda866e9a9df4c080f7fdfed7"
+hash = "37e62ad6e7cde4983ac6c4a4173e7332e0b157f080dd71d615a9aa7423c985d4"
 metafile = true
 
 [[files]]
 file = "mods/hopo-better-underwater-ruins.pw.toml"
-hash = "68c48eeaee34bdd0d22981a4f85105bc1037d558be74d2c115696430049f839d"
+hash = "2972ade18be20c9ddcba1880714deee72d2e33a85d72441fd6e86fdd685d491a"
 metafile = true
 
 [[files]]
 file = "mods/horseman.pw.toml"
-hash = "7703a726ff362b43e40ad9e5e4e4a66d1dcd25bb32728021321ec93aef78e7ef"
+hash = "036bb0c37809a3ff25f3c589c205b925223aea8eb1049d704b29aba09e85ca39"
 metafile = true
 
 [[files]]
@@ -2563,7 +2563,7 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
-hash = "37c3d507be086258aec8a0814224578a1c665749adbb0332d33c32a684086d94"
+hash = "3e6d3262ebbf9838ab67178f71480edf47f55a074b4abd8527e862cdeb57d362"
 metafile = true
 
 [[files]]
@@ -2588,7 +2588,7 @@ metafile = true
 
 [[files]]
 file = "mods/immersive-optimization.pw.toml"
-hash = "6ca237a57318443938c398727691cdd14d0c369667401f11dcf12ca699595d20"
+hash = "c7453d62d11e9363312537f65d59ba7f4498f5cfe50325e99e8032ff4a0dcd2d"
 metafile = true
 
 [[files]]
@@ -2598,7 +2598,7 @@ metafile = true
 
 [[files]]
 file = "mods/item-highlighter.pw.toml"
-hash = "a53db3cbfcc59ff30269743315bdaa929271bb7cd31674285a364e8162e44a7f"
+hash = "32a5ca8e50680882e370246fe1cebdf660a28f75145e85d7ed1d14ca1194eec9"
 metafile = true
 
 [[files]]
@@ -2608,12 +2608,12 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "2adc7a51ce009ed3e7c1e0d22fd71ad2c152796d8e0ab6cda1447bf89d6404bb"
+hash = "8cb7d0a8dcf8c5b587d06a982b80fb63807bc46aac55bbb1b22b9bd6a6289d81"
 metafile = true
 
 [[files]]
 file = "mods/just-enough-professions-jep.pw.toml"
-hash = "f68d6d20d2f1ae3edb429736a46e63fb0a7c3828d876b927431697dd289ab138"
+hash = "5831aa23204273af1ce6aeb9e3615425271689105ea9035fdb7d6ea871d08a3c"
 metafile = true
 
 [[files]]
@@ -2628,12 +2628,12 @@ metafile = true
 
 [[files]]
 file = "mods/knight-lib.pw.toml"
-hash = "a783fa82565c286abc1e364f0268fe3fd972826b6a495d6c51cc26784d1b00f9"
+hash = "bfdbe35c4494eef98bff3bdfd08277b9678ab776a9deb3756c89741b90de02c9"
 metafile = true
 
 [[files]]
 file = "mods/kotlin-for-forge.pw.toml"
-hash = "3c13beafeb69d23d2a43805cfa3d79b7e458cfb8f9ce603075b84d95da630d4b"
+hash = "1506a3d749a45bc760b3ad57ef1fbb959f0c166b6d1d4955114fd66db7a4855d"
 metafile = true
 
 [[files]]
@@ -2648,12 +2648,12 @@ metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
-hash = "3b41e84ca0e5bd93f05eddcdff3f47b38e8bb9863b9bbb4bf05991098487a8a5"
+hash = "fb6171c8f7ff0d83513b3f75ee5d7a98659559c427d79fb69eb0219639af8a37"
 metafile = true
 
 [[files]]
 file = "mods/lithostitched.pw.toml"
-hash = "ec9d06ac76e4017bbfbae4ecd54702071b796b502ac8eabb682705ef71c8d671"
+hash = "d48948d8dbdf7ca96c4bc34be4aed08313d3a7707acab9ed12fb894b470bce58"
 metafile = true
 
 [[files]]
@@ -2673,27 +2673,27 @@ metafile = true
 
 [[files]]
 file = "mods/loot-integrations-structory-towers.pw.toml"
-hash = "4a772ad1acac51a542d11b2464071990ef6a9516d3b01b4e2f3c126ad3bb4839"
+hash = "f7f3ac15db9228c417d9c10dca9bf3aa56331c76dbc31f9ccad359fb733d2c1b"
 metafile = true
 
 [[files]]
 file = "mods/loot-integrations-towns-and-towers.pw.toml"
-hash = "792f29211a95c33f8dcc9f44d99b0330ce19c91096c0f53a52c1886f9b74b113"
+hash = "c5c8e9ae83bff06f906fdbb26ec6e9207b76313f2249d89bc12ae523fbb8b07f"
 metafile = true
 
 [[files]]
 file = "mods/loot-integrations.pw.toml"
-hash = "543b8a8ff5796648146f3102dea686e806f793052d329d0fa3efee8194d4df52"
+hash = "fd2fec912621f573fbf6c35dc7a6ecd0547aa6d95863997ab4232d09595c6097"
 metafile = true
 
 [[files]]
 file = "mods/loot-journal-neoforge.pw.toml"
-hash = "8888b1210d167a0a6cd21a078da4f3523dba31cbe2aab03a634e5cdc50fede4d"
+hash = "4f750b521fd54d83923f364fe3f87bf3ffb0fe3975b1579e9104360dd6762dfd"
 metafile = true
 
 [[files]]
 file = "mods/lootr.pw.toml"
-hash = "d7ed4aa2c8e01de8d38b08f96b7f10dac30b96df1c1e7f4b924588a36f5bdca3"
+hash = "da2695e249cd30861e78ad909d5fd769b6f931862049f17165f41fc18f43129c"
 metafile = true
 
 [[files]]
@@ -2708,12 +2708,12 @@ metafile = true
 
 [[files]]
 file = "mods/macaws-biomes-o-plenty.pw.toml"
-hash = "92c217cd9632ad8f1d822213c68eb24398a419cdf4d15ce116ffd09d0616c0f9"
+hash = "bd9172920bb5de4c4eca980396cc9850322c874459f10dfd535e4ff82b8d0246"
 metafile = true
 
 [[files]]
 file = "mods/macaws-byg-bwg.pw.toml"
-hash = "00d14ba062dee780d4bff02de06e89e0e0908a0870209c71cfb24fbd18d16f4e"
+hash = "701a4c768c1d1d3b57a4eeb14c97889497b1e3f8aa8e27bf18a478d2b8adba14"
 metafile = true
 
 [[files]]
@@ -2763,7 +2763,7 @@ metafile = true
 
 [[files]]
 file = "mods/mcqoy.pw.toml"
-hash = "61dd1673034c1c40ccdd90a296a1fa6ea5a25bb206a86beb3cbca92d0939eb97"
+hash = "b680fa9fdde99ae58255a2a69238d197794eef09217ce97881e80b4ab50f3a64"
 metafile = true
 
 [[files]]
@@ -2773,12 +2773,12 @@ metafile = true
 
 [[files]]
 file = "mods/mod-menu-neoforge-edition.pw.toml"
-hash = "9f18a709b7834e52436d19e5e7fe051fdf1d1d6dad6632ce5415c6f5a707ce74"
+hash = "092e47346a288a93eb69d50b235eb4b5a1ea449599045b8abd037388943bca0a"
 metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "7cf42d1cf3f7e27121d6c8fe1a5b66f7ae20b282e52a29ec63b1d43f88267d1c"
+hash = "bca4d23861040d069b25d0e4bb0c2c763a4e4f54ac51b513c22462253e8cd340"
 metafile = true
 
 [[files]]
@@ -2793,22 +2793,22 @@ metafile = true
 
 [[files]]
 file = "mods/moreculling.pw.toml"
-hash = "1e0c1280c07588b7ffc980a3b3d049c9f61b2342ef2de6ad9a1750c0a1ba1cbd"
+hash = "5a6923fd7118188866c82daf7f2eb7f4f9b07ecca1e4461f8b91d5f6cf5a08d0"
 metafile = true
 
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
-hash = "2bdee19bd39b4bd411d7c858a7978ca9d2bdda41c1cf15920ea6be0014663f79"
+hash = "057044d2179d9e10b616ef8fa4cc870ad350842fc5c325ce0b3766160852cd13"
 metafile = true
 
 [[files]]
 file = "mods/mousetweaks-x-accessories-fix.pw.toml"
-hash = "276449bc5046147ba5832d90590e8fcf55729db7a084a19d25eba642a5db8fb8"
+hash = "cff06c9084c8e3eb2b1f42c7f9a518ae65df42946d05bdcd208d13b0807b1e13"
 metafile = true
 
 [[files]]
 file = "mods/mushroom-quest.pw.toml"
-hash = "14580e74205ff6f917e6063734852b064e13def25c82a246364a2f9ca26dee80"
+hash = "3527f74960b1bfe1ca514a63a60fa386f3470f3e76d3bfb15bc8732b9a5b6fb0"
 metafile = true
 
 [[files]]
@@ -2843,7 +2843,7 @@ metafile = true
 
 [[files]]
 file = "mods/oh-the-biomes-weve-gone.pw.toml"
-hash = "e52ed662249cff6b007ff195d331e0589fe18351dbb0f522fd9eb1f52eb22ee8"
+hash = "a1d2f413c7810edc5d7df5cba9c6893b5c7c17887012c4a264f8cee8be40bed6"
 metafile = true
 
 [[files]]
@@ -2928,12 +2928,12 @@ metafile = true
 
 [[files]]
 file = "mods/presence-footsteps-neoforge.pw.toml"
-hash = "8eed7b899ed784a5d5ed2c4ed4ff1f10a2b650f106f39b3340e2bd6a2a217561"
+hash = "f90a8a7a49423acc35b69a88a1628a3717f3563e02d2256894b13b7aaf9831c8"
 metafile = true
 
 [[files]]
 file = "mods/presence-footsteps-x-sable-aeronautics-compat.pw.toml"
-hash = "d3f344379f2a13cb839384c213a1c9836f8a305e83c696154c732d59aef03c2b"
+hash = "804c0b1b1a8b8a4e3da7fe3bec5be83293b49de3bfa28c266acb269f580a9c55"
 metafile = true
 
 [[files]]
@@ -2948,12 +2948,12 @@ metafile = true
 
 [[files]]
 file = "mods/puzzles-lib.pw.toml"
-hash = "fdf657a22e1b5857d23566b92aec9ee0f75d326065ae0fdc4dbe517ec5ec3b5c"
+hash = "6a07261762a29c6108ea6030ec71ff6801e03127a0004cf105490004c77eacf5"
 metafile = true
 
 [[files]]
 file = "mods/quark.pw.toml"
-hash = "ed816a4574588c1d994fd152c024bc888737c2d5b5bd5a1314705e97e8462d9a"
+hash = "76640f19ee98586dc9283cced28acbf021a587944830ec67a80c92181a65b12f"
 metafile = true
 
 [[files]]
@@ -2993,7 +2993,7 @@ metafile = true
 
 [[files]]
 file = "mods/sable.pw.toml"
-hash = "e8ec0a7577c9e3354b78cc613c2c5e6a9fd708a026869aba82d4ce7fc04bc2e7"
+hash = "56c47f4f4732d86a144c8c86af80411238c3ea74f6b96b0bc5174d2f20073a98"
 metafile = true
 
 [[files]]
@@ -3003,27 +3003,27 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "2461c9d7e1d7dd6e1406a8b51b10fd17bd72f3cc00350b5d09a04888f3c9271c"
+hash = "d318efaa5190d251642c7a6de7f327a35d32a587bc72ec2c180603e72563c9e7"
 metafile = true
 
 [[files]]
 file = "mods/simple-music-control.pw.toml"
-hash = "75b61511b9462f6f9b4a97efbbd7b5c59a4763e3778c3839083e6a335487a4dc"
+hash = "978f908c6d2ef645a4c153a05edd5b13f13c182d25b761e2010b45d98922ba9b"
 metafile = true
 
 [[files]]
 file = "mods/simple-weather.pw.toml"
-hash = "a83ab94ac7b0408f648f0c9c02b905eb4c2dda8f8c01be2fdd588503cc5d8428"
+hash = "1cc83a60ca5be9a535f945bb4449443a476d193cc83dba899e358b319e576a29"
 metafile = true
 
 [[files]]
 file = "mods/sinytra-connector.pw.toml"
-hash = "eff7ebd7bc65ef5d3ba8ac731bc3fb2fd9697566f53dcedbfc55d0b4bb55d60d"
+hash = "8ee59edeb0e357a8645ad9e78d33464c16f8b538dbf9c6a602a6d72cbf246421"
 metafile = true
 
 [[files]]
 file = "mods/slice-and-dice.pw.toml"
-hash = "924590dd9b32e32f209e4e1986347b90355c07763e9a27dc79caa9cb12efeab5"
+hash = "95ac868355ac97c74762a7f5295aa618bc9f67fb6b1ab1009f6a0d9c42efeae2"
 metafile = true
 
 [[files]]
@@ -3033,42 +3033,42 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "f3c75c6d415e4d68307d972ed30ced99ba05968c7ff85301154a60fc42eeed95"
+hash = "3d615c32683131c6a98a7da16c28263c5ca5cf50e4f33029e8c72c3558bb362c"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks-create-integration.pw.toml"
-hash = "20e216ce1d2a14b8e8e224701df5bf3f06789ebdf33715b9d01b3dc9ac35e38a"
+hash = "886f3986d03ace73f8dd524ac70f708dd24e197d3828d45ad39d2e28fee366d2"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "e6de771c6e8e1fd4558d79bcf0e764cefe098faecebf77c2dddf7230436f3f7f"
+hash = "b687b66bb554e428d6a975f3994f6a0d4436b0f7493d827d55f56600adc162ff"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "59661ed4acb80dad85431dbd605971988fcb43e0c9a535a99e5b44b161424036"
+hash = "c0757e55ddac11c19b87e40fa59fd1d7ae775920d1f820dfec375faaf963bef4"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-item-actions.pw.toml"
-hash = "44abc56cee84b6bb486993dcff8bf180850fe4d5c890aaf57bbfb7f068830fd2"
+hash = "458bc4a2ec2769bad64e3e65c5c6b7e0f37a9419254628c9e7dcf2d21066aba2"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage-create-integration.pw.toml"
-hash = "c66a21cc5dcab2ba241b47c42544cf0ca1bccdf8e6605c6d332837fb2dbe98ca"
+hash = "8c53d875a152e45cb105efcbb0e1ea4cebd31815b4030fea26fb4c38fcaf2457"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage-in-motion.pw.toml"
-hash = "09acd5027567fbe83bc552487aaccb3459da24ec293c118377f05d7f1e73bbed"
+hash = "240abcf7b459c14938f22df11ab93b6d49a46f63d161fda8aca8724d0b1bd66f"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "6b9cdf49455216207eb44e650ba1f583ffca844ebbaa39bcbfb8fd80db78372d"
+hash = "6a069249dc653c8a870f32ae6be57e01d792eeab40be79ad7d8c9dd65898e884"
 metafile = true
 
 [[files]]
@@ -3093,7 +3093,7 @@ metafile = true
 
 [[files]]
 file = "mods/steam-n-rails-neoforge.pw.toml"
-hash = "ff0bcf358006b6a6a55c406ba2409cf14bbba5bb99d8a5122abcc8b1ade85f04"
+hash = "7e3bead730c077ab6ff936e48ec95c9d0ce89bb0bb4b1dfcd9d76a7f01b0bd3f"
 metafile = true
 
 [[files]]
@@ -3108,12 +3108,12 @@ metafile = true
 
 [[files]]
 file = "mods/structory-towers.pw.toml"
-hash = "e74548b0dc0bb3633e122f1c36fc8a7978128f15d11cea1a9b54da4991bc1e6f"
+hash = "4428f5091fa0974bbb2881d9758afd62fc66fdc32a81c534faee511aec2bf15a"
 metafile = true
 
 [[files]]
 file = "mods/structory.pw.toml"
-hash = "2232bcc24b4b597dfd19deb3618bf8e0431d7437e978f7503f32ec59f6dd16cd"
+hash = "ff12d69acb3e5e381a890411927cea9cd10e861af95f95cdc774065b46f36361"
 metafile = true
 
 [[files]]
@@ -3123,7 +3123,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "caeab96d11ff269c2d3b79e0ca31e7078c8e0b2ebda9f88fd26a007736162181"
+hash = "34ef88b3e43662d1c2a8c5189003b7d4d471fe9909cd162849d13e9f770da50c"
 metafile = true
 
 [[files]]
@@ -3133,7 +3133,7 @@ metafile = true
 
 [[files]]
 file = "mods/terralith-restoned.pw.toml"
-hash = "6453afd2db04ac742b952dc96bef53610fa89df1c93cf9c3fe926d44d461c8e0"
+hash = "9aa3ac575eadb0eb4e2a8edff60d3b0d4e9fa1eead624dc0585587686b94a94c"
 metafile = true
 
 [[files]]
@@ -3143,12 +3143,12 @@ metafile = true
 
 [[files]]
 file = "mods/the-immersive-music-mod.pw.toml"
-hash = "3defa8f68e3edae0a4972c667cc08f9ea22c28e181243f3615f417485d1071c4"
+hash = "4fc3a872424b1a245faff4f4202b64ed01923519e7beffee35557c5164b23ace"
 metafile = true
 
 [[files]]
 file = "mods/tide.pw.toml"
-hash = "58442e3bcd032f8f0ec1efce17e341417f6861d7d8123f76c60d2c19f39389df"
+hash = "cd4f259b6d6da3cd38453ca85d399008188ebf53aad649231be2729e3fb9bc6e"
 metafile = true
 
 [[files]]
@@ -3178,7 +3178,7 @@ metafile = true
 
 [[files]]
 file = "mods/vanillabackport-x-farmers-delight-compat.pw.toml"
-hash = "e916e3b468e23020992b4e76e435ff4e6541f0df8c2eae80a30dbca918816276"
+hash = "2f4c795532ea25d3d7b17d64b5ca63da28724c3e2063d9227c993624bc904c23"
 metafile = true
 
 [[files]]
@@ -3188,7 +3188,7 @@ metafile = true
 
 [[files]]
 file = "mods/vb-compat.pw.toml"
-hash = "ea963bd48004e20249381ba53582254bdcffa18eac2c99ed9b23d9809f0b4598"
+hash = "21bea199164ecdccb66b953c01ab1e06c839447c46c27307f62cb71cefa940aa"
 metafile = true
 
 [[files]]
@@ -3198,7 +3198,7 @@ metafile = true
 
 [[files]]
 file = "mods/villager-names.pw.toml"
-hash = "388fbd62cfb03e35262ecee9e3a03f8b7861a5c311b959878b8331aae2bb7463"
+hash = "e92933a0f98d5578c0d84c7f269a86890520cf9984defe17b02ae8afa5a0d067"
 metafile = true
 
 [[files]]
@@ -3208,37 +3208,37 @@ metafile = true
 
 [[files]]
 file = "mods/waystones-sable.pw.toml"
-hash = "23fcbec4fa6a10db799090b3337597fa3d2508b18e120f4b42d0146854692a04"
+hash = "55f3e11d721b69f01cc6bc25139df4c5d88d5e6b0a26d599e3578715c9e52a5d"
 metafile = true
 
 [[files]]
 file = "mods/waystones-teleport-pets.pw.toml"
-hash = "fa4292f4eb02dd86e6ee61ac0d973773eb760766aa8e6ee7cb14629fce8444fa"
+hash = "f253fb1cdb2a2db4ab278a4c479f9dd3d4f7d5d3a517eb960d8658318190ad41"
 metafile = true
 
 [[files]]
 file = "mods/waystones.pw.toml"
-hash = "a30086884843ddcd5b0f5d3d82d0942341c8bdc09adf3198a0621ab4751f7c16"
+hash = "e1bf5ce03e68844336f2872a9d203e9230dad089c2a32f43a7e9ebafc7464221"
 metafile = true
 
 [[files]]
 file = "mods/xaero-train-map.pw.toml"
-hash = "33d81da6ce95d11e4bb5bd13f4c8232d360745b625a8f3c6aed5bcf2e85dfea7"
+hash = "f95492c861f9110626aced89187aaa66bcb0bc7ffcec7120730c934762d9d9ff"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-maps-x-waystones.pw.toml"
-hash = "46142836c2ab39e2f1abe04546617f8310797c863bd28a257e96226e490509bf"
+hash = "815e39fe8486c97f09f383772c03d81ce35774a8392fbdbdf01a021f2f624a5b"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "b0663f4f25d3f0b2da1ae82c1e9eff84fbde4752df0798dfb3a33e06a83169ed"
+hash = "c53888d16d1771e36ba64f18cdd82c7e36218491bc373afe19eda9fc44877d31"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "75226d6628d07c4f19e9adcc02f0b36a7f50bbf9071c0971cbacd04b4d4f4799"
+hash = "5677b68b08765dcdf61fbac6e519c790c29d453d6cfd07016b4e09247db6aa34"
 metafile = true
 
 [[files]]
@@ -3248,7 +3248,7 @@ metafile = true
 
 [[files]]
 file = "mods/yung-structures-addon-for-loot-integrations.pw.toml"
-hash = "96f8af7d80e4ba87483d6a69b8fbd8bae787f38a5133038313ff0c1c28b0428f"
+hash = "717b561ad673415cbd548422b4ae813f06b8aaaba11de1593ced83cdd40c6b14"
 metafile = true
 
 [[files]]
@@ -3327,8 +3327,148 @@ hash = "d1baffd370868590fcb2785146c278df5781d20994022749c53c0f9b2bffc7fc"
 metafile = true
 
 [[files]]
+file = "packwiz.md"
+hash = "6214e2fe33c22a6ad0b746ef71aadc4fbfeac2bdb93b612afe1ed3afd2adf55d"
+
+[[files]]
+file = "packwiz_completion.md"
+hash = "dfeef1934c27d067788bbb61e05465166c2be68f2bb58acc179e23694770012c"
+
+[[files]]
+file = "packwiz_completion_bash.md"
+hash = "1cb47355a897cdbe8986fdf503eee01a5cf8bfeee2c2ffb8e2392d9ab730e449"
+
+[[files]]
+file = "packwiz_completion_fish.md"
+hash = "65a677c22d6d29b2ab4df70b8b92b2feaaf7338ee4c7dbe6e67a9566a244ab11"
+
+[[files]]
+file = "packwiz_completion_powershell.md"
+hash = "d4d46b4d4fdf0a7f6960637cfb28f53d0571d55b34727eba2bcc0c5d65b52f96"
+
+[[files]]
+file = "packwiz_completion_zsh.md"
+hash = "19199f78cbffa1f3bc83b8bc79b69fe5bf9783c4c099ca44ca0324f60a0f7d60"
+
+[[files]]
+file = "packwiz_curseforge.md"
+hash = "e8b538ddceb66bf93b23cbad1a7568883f15d95890068cefbbe7632942d94c2f"
+
+[[files]]
+file = "packwiz_curseforge_add.md"
+hash = "98f7339de9a0805e92a9de8b83b99e0e2d44b8cf0aa67b53a62d8c7319e221d0"
+
+[[files]]
+file = "packwiz_curseforge_detect.md"
+hash = "5d662792afc2cb2695e7b37bd65653e08763c0257aa9618ac3582ef190867635"
+
+[[files]]
+file = "packwiz_curseforge_export.md"
+hash = "e58eb2f80f1b71ca552ecb9c7348dd74f9b8178ee4f470f946266840d5f21ff1"
+
+[[files]]
+file = "packwiz_curseforge_import.md"
+hash = "a1e7d3cfc71355dcff229b5452c74011d8da942809680988ce2d0e0d13044e60"
+
+[[files]]
+file = "packwiz_curseforge_open.md"
+hash = "e748c95426242d57b40072a8ab0a2b56f9495ae47b0111d8a4099b810dd67207"
+
+[[files]]
+file = "packwiz_github.md"
+hash = "2788577b4b0fbfed5353510a290f871248409555580ea9f9265de2de8ff53a78"
+
+[[files]]
+file = "packwiz_github_add.md"
+hash = "6fc6fdf54e4d7728e25541ff42c4cfff6a16413bc08ac7526db0b12af364b8d5"
+
+[[files]]
+file = "packwiz_init.md"
+hash = "1ffc609e1f11b10f18007ff5ba2166f6a60e65e2d4f918c428add565ec71c039"
+
+[[files]]
+file = "packwiz_list.md"
+hash = "58c654b45384e4941bb5ed2f8e638ae2205569efc3ee01ec38f647692e324bfd"
+
+[[files]]
+file = "packwiz_migrate.md"
+hash = "c28e8fa319a0d36715c27068a5c717d2dea5f32a1ae3081b03dfb4563c67570e"
+
+[[files]]
+file = "packwiz_migrate_loader.md"
+hash = "31fd6379904cf53293a5997453d45018eba5a9ff01a2adf8c6a640d9ed4dc56f"
+
+[[files]]
+file = "packwiz_migrate_minecraft.md"
+hash = "2fda56e65018ae6442f1568cdcd07584efa44c8cd8c2ba3511f7530b5f17e91f"
+
+[[files]]
+file = "packwiz_modrinth.md"
+hash = "22ee66b55a49e3dd361999c9a4903d403f3440858053895150e5c6be352c4b06"
+
+[[files]]
+file = "packwiz_modrinth_add.md"
+hash = "5bc3679ff056d2407e451cdd1f0548b2c7593547a4b37a9b96f3ad49ec2aa717"
+
+[[files]]
+file = "packwiz_modrinth_export.md"
+hash = "2e5251beff6386a7e9d0abddc31d02e24ff9711b68dc72dcbfdc0e1a662f8eed"
+
+[[files]]
+file = "packwiz_pin.md"
+hash = "0ae66ea343af826396d96d55bff85d28282e487d89e151cd347ad423a96901be"
+
+[[files]]
+file = "packwiz_refresh.md"
+hash = "0c0e2153a76c384e35325c358e461a8515116b8a8b2b99cce5ebc2c160fc9c4a"
+
+[[files]]
+file = "packwiz_rehash.md"
+hash = "d7c6f207243ce7f35c1894121c5ead939f1582ec1596890e6a179c63b3a8af1d"
+
+[[files]]
+file = "packwiz_remove.md"
+hash = "422a051748db5f284ca8fbe1fec5314272202f8a093fe4b1c04b8471d2ecfc61"
+
+[[files]]
+file = "packwiz_serve.md"
+hash = "6f29f7d28bd95313c8480146e6153c75e396afcf7c6d370415c91db0a8001caf"
+
+[[files]]
+file = "packwiz_settings.md"
+hash = "ebbd347fa9e6d36f06071547f351ae60f624050eb497bc28caee968bca5fc1af"
+
+[[files]]
+file = "packwiz_settings_acceptable-versions.md"
+hash = "851d310663035f630069eec405424aae94a8fcab6bd02a2739bf1ad85619b7e4"
+
+[[files]]
+file = "packwiz_unpin.md"
+hash = "0b45af62bd95f1aa9d552aa9a614a92fbab83b214436c865a6e508edbe788fa5"
+
+[[files]]
+file = "packwiz_update.md"
+hash = "f816d9808345339427c15e13590788286d274d73df45c411b005ad931e419e98"
+
+[[files]]
+file = "packwiz_url.md"
+hash = "22bfaa27e22382fdac74d555b6b306f7433849c3db61f72dfbc9ee68f432fe70"
+
+[[files]]
+file = "packwiz_url_add.md"
+hash = "d1ba4bc173a2d092be6918a47b7f738cef1347fa2e311d95634ca4a825d41aa0"
+
+[[files]]
+file = "packwiz_utils.md"
+hash = "53f3c954ac0027428955b820c94caa1271ac7c9d6fc7f15f1ee1b357b8ec7534"
+
+[[files]]
+file = "packwiz_utils_markdown.md"
+hash = "c5a41e0368013ea7ea7ccfe03e0c0a1bf0d94e1805c6ce8fe636b021b2e21d67"
+
+[[files]]
 file = "supplementaries-compat.pw.toml"
-hash = "ecc40d6563a978de8d6138c5c1c0a959f6cfd18fd5da00c940902b974f8a6b72"
+hash = "403dc1bc623b681b41d6b81b1306f68d409e0e28f0a7256f2550c4afde9368aa"
 metafile = true
 
 [[files]]

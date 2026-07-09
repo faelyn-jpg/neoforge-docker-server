@@ -1,13 +1,13 @@
 name = "Friends For Life"
-filename = "friendsforlife-1.2.0.jar"
+filename = "friendsforlife-1.2.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "61561e93ee0ac6f59fd99a1f4981f2b6ab5a1180"
+hash = "e39ffe9b7f2962e7e86966cf4a790f2dea9085e1"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7363207
+file-id = 7425628
 project-id = 1388097

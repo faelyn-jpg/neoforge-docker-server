@@ -1,13 +1,13 @@
 name = "Every Compat (Wood Good)"
-filename = "everycomp-1.21-2.11.44-neoforge.jar"
+filename = "everycomp-1.21-2.11.46-neoforge.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "981d7f4aec41c7f629d83b8248952ff8b3d02314"
+hash = "0946e6e8a9577809f78f30004e7141de14c3fe46"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8219135
+file-id = 8316235
 project-id = 628539

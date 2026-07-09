@@ -1,13 +1,13 @@
 name = "Mushroom Quest"
-filename = "MushroomQuest-NeoForge-1.21.1-v4.3.1.jar"
+filename = "MushroomQuest-NeoForge-1.21.1-v4.3.2.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "896c85f67651f9947490661926aa9a543fa45217"
+hash = "b408d588f3b2addb0571e295662043171aa55e07"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7881847
+file-id = 8281685
 project-id = 351473
