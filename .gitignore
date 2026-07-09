@@ -4,3 +4,5 @@
 backups/
 worlds/
 config.json
+modpack/*.zip
+**/__pycache__
