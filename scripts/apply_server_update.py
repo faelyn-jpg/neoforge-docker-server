@@ -2,6 +2,7 @@
 import subprocess
 import json
 import re
+from sys import stderr, stdout
 import docker
 import webbrowser
 from pathlib import Path
@@ -56,21 +57,21 @@ serve_process = subprocess.Popen(
 def run_with_packwiz():
     result = subprocess.run(
         ["docker", "compose", "-f", "docker-compose.yml", "-f", "docker-compose.packwiz.yml", "up", "survival"],
-        capture_output=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
         text=True,
         cwd=REPO_DIR
     )
     print(result.stdout)
-    print(result.stderr)
     return result
 
 def handle_manual_downloads(log_output):
-    pattern = r'Please go to (httpsL//\S+) and save this file to (/data/mods/\S+)'
+    pattern = r'Please go to (https://\S+) and save this file to (/data/mods/\S+)'
     downloads = re.findall(pattern, log_output)
     if not downloads:
         return False
     seen = set()
-    unique = [(url, path) for url, path in downloads if url not in seen and not seen and not seen.add(url)]
+    unique = [(url, path) for url, path in downloads if url not in seen and not seen.add(url)]
     print(f"\n{len(unique)} mods need manual downloading:")
     for url, container_path in unique: 
         filename = container_path.split("/")[-1]
@@ -83,7 +84,7 @@ def handle_manual_downloads(log_output):
 
 try:
     result = run_with_packwiz()
-    logs = result.stdout + result.stderr
+    logs = result.stdout
     
     if result.returncode != 0:
         had_manual = handle_manual_downloads(logs)
@@ -130,7 +131,6 @@ finally:
         cwd=REPO_DIR
     )
 
-    # Start normally without packwiz URL
     print("Starting survival server normally...")
     subprocess.run(
         ["docker", "compose", "up", "-d", "survival"],
