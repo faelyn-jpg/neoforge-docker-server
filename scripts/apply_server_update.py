@@ -54,12 +54,15 @@ serve_process = subprocess.Popen(
 )
 
 def run_with_packwiz():
-    return subprocess.run(
+    result = subprocess.run(
         ["docker", "compose", "-f", "docker-compose.yml", "-f", "docker-compose.packwiz.yml", "up", "survival"],
         capture_output=True,
         text=True,
         cwd=REPO_DIR
     )
+    print(result.stdout)
+    print(result.stderr)
+    return result
 
 def handle_manual_downloads(log_output):
     pattern = r'Please go to (httpsL//\S+) and save this file to (/data/mods/\S+)'
