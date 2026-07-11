@@ -20,6 +20,10 @@ MODS_DIR = REPO_DIR / "worlds/shared"
 LOG_PATH = SCRIPTS_DIR / "update_log.md"
 PACKWIZ_BOOTSTRAP = SCRIPTS_DIR / "packwiz-installer-bootstrap.jar"
 
+
+print("Stopping FurberBot...")
+subprocess.run(["sudo", "systemctl", "stop", "furberbot"])
+
 if not CHANGELOG_PATH.exists():
     print("No pending update found (last_changelog.json missing!)")
     exit(1)
@@ -117,8 +121,8 @@ try:
         f.write(content)
     print("bcc-common.toml updated")
 
-    print("Starting survival server...")
-    subprocess.run(["docker", "compose", "start", "survival"], cwd=REPO_DIR)
+    print("Starting FurberBot...")
+    subprocess.run(["sudo", "systemctl", "start", "furberbot"])
 
     with open(LOG_PATH, "a") as f:
         f.write(f"\n## {new_version} — {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
