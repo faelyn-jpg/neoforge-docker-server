@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 
 MODPACK_DIR = Path(__file__).parent.parent / "modpack"
+SCRIPTS_DIR = Path(__file__).parent
 mods_dir = MODPACK_DIR / "mods"
 load_dotenv("../.env")
 project_id = int(os.getenv("MODPACK_PROJECT_ID", 0))
@@ -81,8 +82,7 @@ def upload_to_curseforge(zip_path, version, changelog):
     metadata = {
         "changelog": changelog,
         "changelogType": "markdown",
-        "displayName": f"Furber {version}",
-        "gameVersions": ["1.21.1", "NeoForge"],
+        "gameVersionNames": ["1.21.1", "NeoForge"],
         "releaseType": "release"
     }
     
@@ -126,3 +126,11 @@ def format_curseforge_changelog(added, removed, updated, notes):
     if summary:
         lines.append(", ".join(summary))
     return "\n".join(lines)
+
+def save_baseline():
+    baseline = snapshot_mods(MODPACK_DIR / "mods")
+    with open(SCRIPTS_DIR / "baseline_mods.json", "w") as f:
+        json.dump(baseline, f, indent=2)
+    print(f"Baseline saved with {len(baseline)} mods")
+
+

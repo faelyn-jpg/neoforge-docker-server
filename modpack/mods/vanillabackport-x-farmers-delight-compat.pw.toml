@@ -1,6 +1,6 @@
 name = "VanillaBackport X Farmer's Delight Compat"
 filename = "Delightful-Backport-1.0-1.21.1-neoforge.jar"
-side = "server"
+side = "both"
 
 [download]
 hash-format = "sha1"

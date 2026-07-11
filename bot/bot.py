@@ -280,6 +280,8 @@ async def start_server(target_server, on_running=None, on_started=None, on_faile
             if on_running:
                 await on_running()
             return
+        if target_server in listeners and listeners[target_server].active:
+            await listeners[target_server].unbind()
         server_starting = True
         container.start()
         success = await wait_for_server(container)

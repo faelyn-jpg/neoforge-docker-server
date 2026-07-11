@@ -578,7 +578,7 @@ hash = "cae5ba66971b2f61e0b523c5aeb8b8d4fa806f0bea8a1709860e4fea94426ac9"
 
 [[files]]
 file = "config/bcc-common.toml"
-hash = "de9ee469bf583c13d5461634e4d6057fc8ffef8bb925e62abb69857cb383ea46"
+hash = "ea9754467d9fcca77214ab7784a640207d58175d1f6193fd8060ec70a844e366"
 
 [[files]]
 file = "config/betterchunkloading.json"
@@ -1897,14 +1897,6 @@ file = "config/zeta-common.toml"
 hash = "ea1fa91de03d8f6f3c36b0c6cef77375a8365790ac0acb63fd558643d54d677f"
 
 [[files]]
-file = "datapacks/Supplementaries Compat 1.0.zip"
-hash = "c8ae1fe5df63bc985415ce09017948f65714f5befaa1f4c6d2f9a888f21ef432"
-
-[[files]]
-file = "datapacks/VB-MobVariantCompat1.4.1.zip"
-hash = "e6e783eb48399941a23ac899bd370f5224d8ce311643202ee9910316a3a330e0"
-
-[[files]]
 file = "mods/accessories-compat-layer.pw.toml"
 hash = "0085d9a1eb73a68fe1d07f26b27fb93b0e1a582ab0f47d068fc94d055165aa99"
 metafile = true
@@ -1936,7 +1928,7 @@ metafile = true
 
 [[files]]
 file = "mods/alltheleaks.pw.toml"
-hash = "7e03652d2003566873ab5103454f7c537471d6c2fea1c2f614507b33ef4434f7"
+hash = "15cf7e8df90f1e5b6187c4b3a53485bb8186589a3ffd3bfc9ca9ca0c58a213ac"
 metafile = true
 
 [[files]]
@@ -2000,6 +1992,11 @@ hash = "130e60104ba3741895272ba1a2ccbddb0bec7476f5184a16eb36ad96dd9fc0cf"
 metafile = true
 
 [[files]]
+file = "mods/astikor-carts-redux.pw.toml"
+hash = "862032c74a95cbf73638bb5afed2de24e96f3665fe22c6c1b14f1203c46e437c"
+metafile = true
+
+[[files]]
 file = "mods/badoptimizations.pw.toml"
 hash = "e2f2a6f6ff38054ce8d91a43a20b79ea7b4e84cb924142fb7d2bcfdd95fe5b57"
 metafile = true
@@ -2011,7 +2008,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "fcadcc088675cf866ea08c4c1bbd11adccb21b1e0fe9715c37ff7f88d9a96716"
+hash = "dd4f7fa317d9d64f1e04350c95b7bfd566eda25a48f243704c7d92cf015f1b57"
 metafile = true
 
 [[files]]
@@ -2030,11 +2027,6 @@ hash = "84fd12a30b0fecc1df5c03b6ec1bcbd6263211e65e17f24075a54773af6bfaff"
 metafile = true
 
 [[files]]
-file = "mods/better-chunk-loading-forge-fabric.pw.toml"
-hash = "4cfcccd6c2191de2b0d595d21012371356b0f07f66512567bc6484b4d2f3d98c"
-metafile = true
-
-[[files]]
 file = "mods/better-compatibility-checker.pw.toml"
 hash = "55fe1f1a0b72abf4b697b3e0d8f5449e590bb519d26a29e6eeac049161003a34"
 metafile = true
@@ -2043,10 +2035,6 @@ metafile = true
 file = "mods/better-ping-display.pw.toml"
 hash = "a19d5c8575b61687a192c2783ebbd4acd66919c99bfff0a6c0301ba39ae203a3"
 metafile = true
-
-[[files]]
-file = "mods/better-stonecutter-2.0.1.jar"
-hash = "67e330765f443e8f82b9e18120b1252d9dac6c2db6335fee390047dd493298d6"
 
 [[files]]
 file = "mods/better-stonecutter.pw.toml"
@@ -2165,7 +2153,7 @@ metafile = true
 
 [[files]]
 file = "mods/crash-assistant.pw.toml"
-hash = "b519c68623e83afb4ada0ceed378670faa99409f7ab2d1de04baeaa597dc517a"
+hash = "2de399fb6edc699bf32a9c300864aebd3552e6b29a8283031204d9f4ce3f0796"
 metafile = true
 
 [[files]]
@@ -2385,21 +2373,13 @@ metafile = true
 
 [[files]]
 file = "mods/entity-model-features.pw.toml"
-hash = "ea67fcbd702909226736e0feb0d64df758e21e724d53a43730537c6bbf34d455"
+hash = "908cf2dad0f0cfa7c056f112ef4727c84e865687a031e1d0d2187321ca001d6c"
 metafile = true
 
 [[files]]
 file = "mods/entity-texture-features-fabric.pw.toml"
-hash = "298f2a99e309853181e71938c2358c4b2c7c6c19137dcf6bcefb736d43ab6f65"
+hash = "cc68235aff068c4a38af04e4091516720bb731cbb3789b1f6736f096523b336f"
 metafile = true
-
-[[files]]
-file = "mods/entity_model_features-3.2.4-1.21-neoforge.jar.disabled"
-hash = "84c22f2be06ee6bfab265a443e075225878bba9f408843030dc6de3152e9dedb"
-
-[[files]]
-file = "mods/entity_texture_features_1.21-neoforge-7.1.jar.disabled"
-hash = "b2e396543c678b8378a2d5557a0cd3d24790364bff7e96edaf17921112d6176b"
 
 [[files]]
 file = "mods/entityculling.pw.toml"
@@ -2608,7 +2588,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "8cb7d0a8dcf8c5b587d06a982b80fb63807bc46aac55bbb1b22b9bd6a6289d81"
+hash = "8cf199fbfa45f1a3e05f7059c56dfb4dbfc5dcd6615b82434f6608ab5445001a"
 metafile = true
 
 [[files]]
@@ -2628,7 +2608,7 @@ metafile = true
 
 [[files]]
 file = "mods/knight-lib.pw.toml"
-hash = "bfdbe35c4494eef98bff3bdfd08277b9678ab776a9deb3756c89741b90de02c9"
+hash = "d672f3b1fdcec2ee78d2638e046b9562688c44550979ff4e31705c24b37081bb"
 metafile = true
 
 [[files]]
@@ -2887,11 +2867,6 @@ hash = "3718e8a37d0dc2939cc350cce74bcb9c36b59f48baf4560e62804f7ca6478185"
 metafile = true
 
 [[files]]
-file = "mods/paxi-neoforge.pw.toml"
-hash = "b195d17d8138d83647b6abb853e25b3b2d6d8defdc76bb345eb93f40c2232019"
-metafile = true
-
-[[files]]
 file = "mods/ping-to-map-xaeros.pw.toml"
 hash = "93faf3d1a5ab6afa15dcbbac2ff7d2d30a8555662b55e187d301c0eac956123e"
 metafile = true
@@ -3023,7 +2998,7 @@ metafile = true
 
 [[files]]
 file = "mods/slice-and-dice.pw.toml"
-hash = "95ac868355ac97c74762a7f5295aa618bc9f67fb6b1ab1009f6a0d9c42efeae2"
+hash = "b8694aaef938b24bccb3d39b2532e99baffbeac9e9bacc030365791bfc2eeb17"
 metafile = true
 
 [[files]]
@@ -3038,37 +3013,37 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks-create-integration.pw.toml"
-hash = "886f3986d03ace73f8dd524ac70f708dd24e197d3828d45ad39d2e28fee366d2"
+hash = "f56e0c23ba34fcbb889c396b99f31a5f33365e00202b7728846e449825d58e03"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "b687b66bb554e428d6a975f3994f6a0d4436b0f7493d827d55f56600adc162ff"
+hash = "cba9c49ef2e074154d6c9f2a61824ce4fa336f4bc1b61d7891b628fc4b5aeec1"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "c0757e55ddac11c19b87e40fa59fd1d7ae775920d1f820dfec375faaf963bef4"
+hash = "c379295c0754112a5a7b83bd0dab3a9125260f58c1d2805a6b10959019eeabe7"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-item-actions.pw.toml"
-hash = "458bc4a2ec2769bad64e3e65c5c6b7e0f37a9419254628c9e7dcf2d21066aba2"
+hash = "9ba4d0ff3dc2d9748842f8825820fe752de9dba28b9c44ba647b22cd2354bd8d"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage-create-integration.pw.toml"
-hash = "8c53d875a152e45cb105efcbb0e1ea4cebd31815b4030fea26fb4c38fcaf2457"
+hash = "7bc609b247bb1471d515e78a73d9cb6c1af8280be56df98268aaf23706f70164"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage-in-motion.pw.toml"
-hash = "240abcf7b459c14938f22df11ab93b6d49a46f63d161fda8aca8724d0b1bd66f"
+hash = "56f6bd9391502e8fb38a2b6dfdbb92f143965f25f33e3a3e6b39a72e1c834db3"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "6a069249dc653c8a870f32ae6be57e01d792eeab40be79ad7d8c9dd65898e884"
+hash = "4bdabbc8a7e16df7251c18546a7b8930c04ef75f955ace075b93ba4148abdb9a"
 metafile = true
 
 [[files]]
@@ -3108,7 +3083,7 @@ metafile = true
 
 [[files]]
 file = "mods/structory-towers.pw.toml"
-hash = "4428f5091fa0974bbb2881d9758afd62fc66fdc32a81c534faee511aec2bf15a"
+hash = "ee7c7cdc3098e24dab92beffba371b4c5705240a2374c9fd24673fc622e29bb6"
 metafile = true
 
 [[files]]
@@ -3177,8 +3152,13 @@ hash = "7d7deb14e956b71fe2f9c999acefdb5edbfc264d9c66e5e2fce7c90ee704d05a"
 metafile = true
 
 [[files]]
+file = "mods/vanillabackport-mob-variants-compat.pw.toml"
+hash = "af8893eef98f448528c63f2770fb6c0c6cf01891569b8bdbde0313d09c2e4df9"
+metafile = true
+
+[[files]]
 file = "mods/vanillabackport-x-farmers-delight-compat.pw.toml"
-hash = "2f4c795532ea25d3d7b17d64b5ca63da28724c3e2063d9227c993624bc904c23"
+hash = "b188329b4fcc10a9625f9f443f2f0cbe89eb5b31b2cf7a9ee10c209ee2aa649c"
 metafile = true
 
 [[files]]
@@ -3208,7 +3188,7 @@ metafile = true
 
 [[files]]
 file = "mods/waystones-sable.pw.toml"
-hash = "55f3e11d721b69f01cc6bc25139df4c5d88d5e6b0a26d599e3578715c9e52a5d"
+hash = "f6a7955c87063de02f441cba9f23bd70160e38e023304d5a498833118a5965ab"
 metafile = true
 
 [[files]]
@@ -3218,7 +3198,7 @@ metafile = true
 
 [[files]]
 file = "mods/waystones.pw.toml"
-hash = "e1bf5ce03e68844336f2872a9d203e9230dad089c2a32f43a7e9ebafc7464221"
+hash = "a8b98750a51ba1ef7cd98be2d4fc053bfd93af8df1410708a3219b1aeab71ac0"
 metafile = true
 
 [[files]]
@@ -3325,146 +3305,6 @@ metafile = true
 file = "mods/zeta.pw.toml"
 hash = "d1baffd370868590fcb2785146c278df5781d20994022749c53c0f9b2bffc7fc"
 metafile = true
-
-[[files]]
-file = "packwiz.md"
-hash = "6214e2fe33c22a6ad0b746ef71aadc4fbfeac2bdb93b612afe1ed3afd2adf55d"
-
-[[files]]
-file = "packwiz_completion.md"
-hash = "dfeef1934c27d067788bbb61e05465166c2be68f2bb58acc179e23694770012c"
-
-[[files]]
-file = "packwiz_completion_bash.md"
-hash = "1cb47355a897cdbe8986fdf503eee01a5cf8bfeee2c2ffb8e2392d9ab730e449"
-
-[[files]]
-file = "packwiz_completion_fish.md"
-hash = "65a677c22d6d29b2ab4df70b8b92b2feaaf7338ee4c7dbe6e67a9566a244ab11"
-
-[[files]]
-file = "packwiz_completion_powershell.md"
-hash = "d4d46b4d4fdf0a7f6960637cfb28f53d0571d55b34727eba2bcc0c5d65b52f96"
-
-[[files]]
-file = "packwiz_completion_zsh.md"
-hash = "19199f78cbffa1f3bc83b8bc79b69fe5bf9783c4c099ca44ca0324f60a0f7d60"
-
-[[files]]
-file = "packwiz_curseforge.md"
-hash = "e8b538ddceb66bf93b23cbad1a7568883f15d95890068cefbbe7632942d94c2f"
-
-[[files]]
-file = "packwiz_curseforge_add.md"
-hash = "98f7339de9a0805e92a9de8b83b99e0e2d44b8cf0aa67b53a62d8c7319e221d0"
-
-[[files]]
-file = "packwiz_curseforge_detect.md"
-hash = "5d662792afc2cb2695e7b37bd65653e08763c0257aa9618ac3582ef190867635"
-
-[[files]]
-file = "packwiz_curseforge_export.md"
-hash = "e58eb2f80f1b71ca552ecb9c7348dd74f9b8178ee4f470f946266840d5f21ff1"
-
-[[files]]
-file = "packwiz_curseforge_import.md"
-hash = "a1e7d3cfc71355dcff229b5452c74011d8da942809680988ce2d0e0d13044e60"
-
-[[files]]
-file = "packwiz_curseforge_open.md"
-hash = "e748c95426242d57b40072a8ab0a2b56f9495ae47b0111d8a4099b810dd67207"
-
-[[files]]
-file = "packwiz_github.md"
-hash = "2788577b4b0fbfed5353510a290f871248409555580ea9f9265de2de8ff53a78"
-
-[[files]]
-file = "packwiz_github_add.md"
-hash = "6fc6fdf54e4d7728e25541ff42c4cfff6a16413bc08ac7526db0b12af364b8d5"
-
-[[files]]
-file = "packwiz_init.md"
-hash = "1ffc609e1f11b10f18007ff5ba2166f6a60e65e2d4f918c428add565ec71c039"
-
-[[files]]
-file = "packwiz_list.md"
-hash = "58c654b45384e4941bb5ed2f8e638ae2205569efc3ee01ec38f647692e324bfd"
-
-[[files]]
-file = "packwiz_migrate.md"
-hash = "c28e8fa319a0d36715c27068a5c717d2dea5f32a1ae3081b03dfb4563c67570e"
-
-[[files]]
-file = "packwiz_migrate_loader.md"
-hash = "31fd6379904cf53293a5997453d45018eba5a9ff01a2adf8c6a640d9ed4dc56f"
-
-[[files]]
-file = "packwiz_migrate_minecraft.md"
-hash = "2fda56e65018ae6442f1568cdcd07584efa44c8cd8c2ba3511f7530b5f17e91f"
-
-[[files]]
-file = "packwiz_modrinth.md"
-hash = "22ee66b55a49e3dd361999c9a4903d403f3440858053895150e5c6be352c4b06"
-
-[[files]]
-file = "packwiz_modrinth_add.md"
-hash = "5bc3679ff056d2407e451cdd1f0548b2c7593547a4b37a9b96f3ad49ec2aa717"
-
-[[files]]
-file = "packwiz_modrinth_export.md"
-hash = "2e5251beff6386a7e9d0abddc31d02e24ff9711b68dc72dcbfdc0e1a662f8eed"
-
-[[files]]
-file = "packwiz_pin.md"
-hash = "0ae66ea343af826396d96d55bff85d28282e487d89e151cd347ad423a96901be"
-
-[[files]]
-file = "packwiz_refresh.md"
-hash = "0c0e2153a76c384e35325c358e461a8515116b8a8b2b99cce5ebc2c160fc9c4a"
-
-[[files]]
-file = "packwiz_rehash.md"
-hash = "d7c6f207243ce7f35c1894121c5ead939f1582ec1596890e6a179c63b3a8af1d"
-
-[[files]]
-file = "packwiz_remove.md"
-hash = "422a051748db5f284ca8fbe1fec5314272202f8a093fe4b1c04b8471d2ecfc61"
-
-[[files]]
-file = "packwiz_serve.md"
-hash = "6f29f7d28bd95313c8480146e6153c75e396afcf7c6d370415c91db0a8001caf"
-
-[[files]]
-file = "packwiz_settings.md"
-hash = "ebbd347fa9e6d36f06071547f351ae60f624050eb497bc28caee968bca5fc1af"
-
-[[files]]
-file = "packwiz_settings_acceptable-versions.md"
-hash = "851d310663035f630069eec405424aae94a8fcab6bd02a2739bf1ad85619b7e4"
-
-[[files]]
-file = "packwiz_unpin.md"
-hash = "0b45af62bd95f1aa9d552aa9a614a92fbab83b214436c865a6e508edbe788fa5"
-
-[[files]]
-file = "packwiz_update.md"
-hash = "f816d9808345339427c15e13590788286d274d73df45c411b005ad931e419e98"
-
-[[files]]
-file = "packwiz_url.md"
-hash = "22bfaa27e22382fdac74d555b6b306f7433849c3db61f72dfbc9ee68f432fe70"
-
-[[files]]
-file = "packwiz_url_add.md"
-hash = "d1ba4bc173a2d092be6918a47b7f738cef1347fa2e311d95634ca4a825d41aa0"
-
-[[files]]
-file = "packwiz_utils.md"
-hash = "53f3c954ac0027428955b820c94caa1271ac7c9d6fc7f15f1ee1b357b8ec7534"
-
-[[files]]
-file = "packwiz_utils_markdown.md"
-hash = "c5a41e0368013ea7ea7ccfe03e0c0a1bf0d94e1805c6ce8fe636b021b2e21d67"
 
 [[files]]
 file = "supplementaries-compat.pw.toml"

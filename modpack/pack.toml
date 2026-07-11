@@ -1,13 +1,13 @@
 name = "Furber"
 author = "faelynjpg"
-version = "1.0.5"
+version = "1.0.7"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "b7878c1237e9feb48fc6a62eab99587eb1dedc76233ee6282154f44fdc395233"
+hash = "a7fea0b9154fdc9d440ee1baadf58d4d4057b12283b05de7e4041d29d1e8fa81"
 
 [versions]
 minecraft = "1.21.1"
-neoforge = "21.1.233"
+neoforge = "21.1.235"

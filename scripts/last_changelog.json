@@ -1,8 +1,8 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.7",
   "added": {},
   "removed": {},
   "updated": {},
-  "notes": "SodiumExtrasAPI incompatible with Sable/Sodium/Create update",
-  "changelog": "\n### Notes\nSodiumExtrasAPI incompatible with Sable/Sodium/Create update"
+  "notes": "fix datapack",
+  "changelog": "\n### Notes\nfix datapack"
 }

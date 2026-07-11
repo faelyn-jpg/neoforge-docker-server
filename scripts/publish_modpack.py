@@ -3,22 +3,25 @@ import subprocess
 import tomllib
 import argparse
 import json
-from test_mods import format_changelog, snapshot_mods, diff_mods, format_changelog, update_pack_toml, upload_to_curseforge, get_zip_path, format_curseforge_changelog
+import re
+from test_mods import format_changelog, snapshot_mods, diff_mods, format_changelog, update_pack_toml, upload_to_curseforge, get_zip_path, format_curseforge_changelog, save_baseline
 from dotenv import load_dotenv
-from datetime import datetime
 from pathlib import Path 
 
 parser = argparse.ArgumentParser(description="Publish Furber modpack")
 parser.add_argument("--upload-only", action="store_true", help="Skip update and export, just upload existing zip")
+parser.add_argument("--save-baseline", action="store_true", help="Save current mod state as baseline and exit")
 args = parser.parse_args()
 load_dotenv(Path(__file__).parent.parent / ".env")
 MODPACK_DIR = Path(__file__).parent.parent / "modpack"
-BCC_CONFIG = Path(__file__).parent.parent / "worlds/shared/config/bcc-common.toml"
+BCC_CONFIG = Path(__file__).parent.parent / "modpack/config/bcc-common.toml"
 CHANGELOG_PATH = Path(__file__).parent / "last_changelog.json"
 
 with open(MODPACK_DIR / "pack.toml", "rb") as f:
     pack = tomllib.load(f)
-
+if args.save_baseline:
+    save_baseline()
+    exit(0)
 current_version = pack["version"]
 print(f"Current version: {current_version}")
 if args.upload_only:
@@ -89,6 +92,15 @@ else:
         update_pack_toml(MODPACK_DIR / "pack.toml", new_version)
         print("Version updated in pack.toml")
     
+    print(f"Updating bcc-common.toml to {new_version}...")
+    with open(BCC_CONFIG, "r") as f:
+        content = f.read()
+    content = re.sub(r'modpackVersion = ".*?"', f'modpackVersion = "{new_version}"', content)
+    with open(BCC_CONFIG, "w") as f:
+        f.write(content)
+    print("bcc-common.toml updated")
+
+
     print("Exporting modpack...")
     export_result = subprocess.run(
         ["packwiz", "cf", "export"],
@@ -103,6 +115,8 @@ else:
 
     print("Export successful")
 
+save_baseline()
+print("Baseline updated.")
 zip_path = get_zip_path()
 cf_changelog = format_curseforge_changelog(added, removed, updated, notes)
 file_id = upload_to_curseforge(zip_path, new_version, cf_changelog)

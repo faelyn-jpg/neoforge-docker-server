@@ -2,11 +2,12 @@
 import subprocess
 import json
 import re
-from sys import stderr, stdout
+import time
 import docker
+from datetime import datetime
+from docker import errors as docker_errors
 import webbrowser
 from pathlib import Path
-from datetime import datetime
 from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).parent.parent / ".env")
@@ -15,16 +16,15 @@ MODPACK_DIR = Path(__file__).parent.parent / "modpack"
 BCC_CONFIG = Path(__file__).parent.parent / "worlds/shared/config/bcc-common.toml"
 CHANGELOG_PATH = SCRIPTS_DIR / "last_changelog.json"
 REPO_DIR = Path(__file__).parent.parent
-MODS_DIR = REPO_DIR / "worlds/shared/mods"
+MODS_DIR = REPO_DIR / "worlds/shared"
 LOG_PATH = SCRIPTS_DIR / "update_log.md"
+PACKWIZ_BOOTSTRAP = SCRIPTS_DIR / "packwiz-installer-bootstrap.jar"
 
 if not CHANGELOG_PATH.exists():
     print("No pending update found (last_changelog.json missing!)")
     exit(1)
-
 with open(CHANGELOG_PATH) as f:
     saved = json.load(f)
-
 new_version = saved["version"]
 changelog = saved["changelog"]
 
@@ -36,15 +36,18 @@ if confirm != "y":
     exit(0)
 
 docker_client = docker.from_env()
-container = docker_client.containers.get("survival")
-if container.status == "running":
-    print("WARNING: Survival server is currently running!")
-    confirm = input("Stop server and apply update? (y/n): ").strip().lower()
-    if confirm != "y":
-        print("Aborted")
-        exit(0)
-    container.stop(timeout=60)
-    print("Server stopped")
+try:   
+    container = docker_client.containers.get("survival")
+    if container.status == "running":
+        print("WARNING: Survival server is currently running!")
+        confirm = input("Stop server and apply update? (y/n): ").strip().lower()
+        if confirm != "y":
+            print("Aborted")
+            exit(0)
+        container.stop(timeout=60)
+        print("Server stopped")
+except docker_errors.NotFound:
+    print("Survival container not found, continuing...")
 
 print("Starting packwiz serve...")
 serve_process = subprocess.Popen(
@@ -53,20 +56,23 @@ serve_process = subprocess.Popen(
     stdout=subprocess.DEVNULL,
     stderr=subprocess.DEVNULL
 )
+time.sleep(2)
+if serve_process.poll() is not None:
+    print("ERROR: packwiz serve failed to start!")
+    exit(1)
+print("packwiz serve is running")
 
-def run_with_packwiz():
-    result = subprocess.run(
-        ["docker", "compose", "-f", "docker-compose.yml", "-f", "docker-compose.packwiz.yml", "up", "survival"],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        text=True,
-        cwd=REPO_DIR
-    )
-    print(result.stdout)
-    return result
+def run_packwiz_installer():
+    print("Running packwiz-installer...")
+    return subprocess.run([
+        "java", "-jar", str(PACKWIZ_BOOTSTRAP),
+        "-g", "-s", "server",
+        f"http://localhost:8080/pack.toml",
+        "--pack-folder", str(MODS_DIR)
+    ], capture_output=True, text=True)
 
 def handle_manual_downloads(log_output):
-    pattern = r'Please go to (https://\S+) and save this file to (/data/mods/\S+)'
+    pattern = r'Please go to (https://\S+) and save this file to (\S+\.jar)'
     downloads = re.findall(pattern, log_output)
     if not downloads:
         return False
@@ -81,23 +87,26 @@ def handle_manual_downloads(log_output):
         webbrowser.open(url)
     input("\nDownload all files to the listed locations, then press Enter to retry...")
     return True
-
 try:
-    result = run_with_packwiz()
-    logs = result.stdout
-    
-    if result.returncode != 0:
+    install_result = run_packwiz_installer()
+    print(install_result.stdout)
+    print(install_result.stderr)
+    logs = install_result.stdout + install_result.stderr
+
+    if install_result.returncode != 0:
         had_manual = handle_manual_downloads(logs)
         if had_manual:
-            print("Retrying...")
-            result = run_with_packwiz()
-            if result.returncode != 0:
-                print("Still failing after manual downloads:")
-                print(result.stdout + result.stderr)
+            install_result = run_packwiz_installer()
+            print(install_result.stdout)
+            print(install_result.stderr)
+            if install_result.returncode != 0:
+                print("Still failing after manual downloads")
+                serve_process.terminate()
                 exit(1)
         else:
             print("Failed with no manual downloads needed:")
             print(logs)
+            serve_process.terminate()
             exit(1)
 
     print(f"Updating bcc-common.toml to {new_version}...")
@@ -108,8 +117,10 @@ try:
         f.write(content)
     print("bcc-common.toml updated")
 
-    log_path = SCRIPTS_DIR / "update_log.md"
-    with open(log_path, "a") as f:
+    print("Starting survival server...")
+    subprocess.run(["docker", "compose", "start", "survival"], cwd=REPO_DIR)
+
+    with open(LOG_PATH, "a") as f:
         f.write(f"\n## {new_version} — {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
         f.write(changelog)
         f.write("\n")
@@ -120,19 +131,8 @@ try:
     subprocess.run(["git", "push"], cwd=REPO_DIR)
     print("Changes committed and pushed")
     print("Done!")
-
 finally:
-    print("Stopping packwiz serve...")
     serve_process.terminate()
     serve_process.wait()
-    print("Stopping packwiz container...")
-    subprocess.run(
-        ["docker", "compose", "-f", "docker-compose.yml", "-f", "docker-compose.packwiz.yml", "down", "survival"],
-        cwd=REPO_DIR
-    )
-
-    print("Starting survival server normally...")
-    subprocess.run(
-        ["docker", "compose", "up", "-d", "survival"],
-        cwd=REPO_DIR
-    )
+    print("packwiz serve stopped")
+  

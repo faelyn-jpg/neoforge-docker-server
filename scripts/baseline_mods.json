@@ -1,0 +1,1130 @@
+{
+  "Accessories Compatibility Layer": {
+    "filename": "accessories_compat_layer-neoforge-0.1.12+1.21.1.jar",
+    "side": "both"
+  },
+  "Accessories": {
+    "filename": "accessories-neoforge-1.1.0-beta.53+1.21.1.jar",
+    "side": "both"
+  },
+  "Accessorify": {
+    "filename": "accessorify-2.4.0-beta.5+1.21.1-neoforge.jar",
+    "side": "both"
+  },
+  "AddonsLib": {
+    "filename": "addonslib-neoforge-1.21.1-1.14.jar",
+    "side": "both"
+  },
+  "Adorable Hamster Pets": {
+    "filename": "adorablehamsterpets-3.6.1-1.21.1+neoforge.jar",
+    "side": "both"
+  },
+  "Advanced Netherite (Forge / NeoForge)": {
+    "filename": "advancednetherite-neoforge-2.3.1-1.21.1.jar",
+    "side": "both"
+  },
+  "AllTheLeaks (Memory Leak Fix)": {
+    "filename": "alltheleaks-1.1.10+1.21.1-neoforge.jar",
+    "side": "both"
+  },
+  "Almost Unified": {
+    "filename": "almostunified-neoforge-1.21.1-1.4.2.jar",
+    "side": "both"
+  },
+  "Amendments": {
+    "filename": "amendments-neoforge-1.21-2.1.5.jar",
+    "side": "both"
+  },
+  "AppleSkin": {
+    "filename": "appleskin-neoforge-mc1.21-3.0.9.jar",
+    "side": "both"
+  },
+  "Aquaculture Delight (A Farmer's Delight Add-on)": {
+    "filename": "aquaculturedelight-1.2.0-neoforge-1.21.1.jar",
+    "side": "both"
+  },
+  "Aquaculture 2": {
+    "filename": "Aquaculture-1.21.1-2.7.21.jar",
+    "side": "both"
+  },
+  "Architectury API": {
+    "filename": "architectury-13.0.8-neoforge.jar",
+    "side": "both"
+  },
+  "Armor Poser": {
+    "filename": "ArmorPoser-neoforge-1.21.1-6.2.3.jar",
+    "side": "both"
+  },
+  "Armor Statues": {
+    "filename": "ArmorStatues-v21.1.0-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "Ars Creo": {
+    "filename": "ars_creo-1.21.1-5.4.0.jar",
+    "side": "both"
+  },
+  "Ars Nouveau": {
+    "filename": "ars_nouveau-1.21.1-5.12.1.jar",
+    "side": "both"
+  },
+  "Ars Nouveau's Flavors & Delight": {
+    "filename": "arsdelight-2.2.2.jar",
+    "side": "both"
+  },
+  "Ars Technica": {
+    "filename": "ars_technica-1.21.1-2.7.6.jar",
+    "side": "both"
+  },
+  "AstikorCarts Redux": {
+    "filename": "astikorcartsredux-1.2.2.jar",
+    "side": "both"
+  },
+  "BadOptimizations": {
+    "filename": "BadOptimizations-2.4.1-1.21.1.jar",
+    "side": "both"
+  },
+  "BaguetteLib": {
+    "filename": "baguettelib-1.21.1-NeoForge-2.0.3.jar",
+    "side": "both"
+  },
+  "Balm": {
+    "filename": "balm-neoforge-1.21.1-21.0.62.jar",
+    "side": "both"
+  },
+  "Beautiful Enchanted Books [MOD EDITION] | 6.0 UPDATE!": {
+    "filename": "BEB-NeoForge-1.21-6.0.0.jar",
+    "side": "both"
+  },
+  "Beautiful Potions [MOD EDITION] | 2.0 UPDATE! ": {
+    "filename": "BTP-NeoForge-1.21.1-2.0.0.jar",
+    "side": "both"
+  },
+  "Create: Bells & Whistles": {
+    "filename": "bellsandwhistles-0.4.7-1.21.1.jar",
+    "side": "both"
+  },
+  "Better Compatibility Checker": {
+    "filename": "better-compatability-checker-neoforge-21.1.8.jar",
+    "side": "both"
+  },
+  "Better Ping Display": {
+    "filename": "BetterPingDisplay-1.21.1-1.1.jar",
+    "side": "client"
+  },
+  "Better Stonecutter": {
+    "filename": "better-stonecutter-2.0.1.jar",
+    "side": "server"
+  },
+  "Biomes O' Plenty": {
+    "filename": "BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+    "side": "both"
+  },
+  "Bookshelf": {
+    "filename": "bookshelf-neoforge-1.21.1-21.1.81.jar",
+    "side": "both"
+  },
+  "Brewin' And Chewin'": {
+    "filename": "BrewinAndChewin-neoforge-4.5.0+1.21.1.jar",
+    "side": "both"
+  },
+  "Building Wands": {
+    "filename": "BuildingWands-neoforge-MC1.21.1-3.0.5.jar",
+    "side": "both"
+  },
+  "Concurrent Chunk Management Engine": {
+    "filename": "c2me-neoforge-mc1.21.1-0.4.0-alpha.0.113.jar",
+    "side": "both"
+  },
+  "Calm The Leaks (CTL)": {
+    "filename": "calmtheleaks-1.2.1-neoforge.jar",
+    "side": "both"
+  },
+  "Carpet Diem": {
+    "filename": "carpetdiem-0.1-1.21.1NF.jar",
+    "side": "both"
+  },
+  "Carryon - Patched (Unofficial)": {
+    "filename": "carryon-neoforge-1.21.1-2.2.4.4-patched-no-slowness.jar",
+    "side": "both"
+  },
+  "Chat Heads": {
+    "filename": "chat_heads-0.15.2-neoforge-1.21.jar",
+    "side": "both"
+  },
+  "Chimes": {
+    "filename": "Chimes-v2.1.1-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "Chunky (Forge/NeoForge)": {
+    "filename": "Chunky-NeoForge-1.4.23.jar",
+    "side": "both"
+  },
+  "Cloth Config API (Fabric/Forge/NeoForge)": {
+    "filename": "cloth-config-15.0.140-neoforge.jar",
+    "side": "both"
+  },
+  "Clumps": {
+    "filename": "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+    "side": "both"
+  },
+  "Collective": {
+    "filename": "collective-1.21.1-8.39.jar",
+    "side": "both"
+  },
+  "Comforts": {
+    "filename": "comforts-neoforge-9.0.5+1.21.1.jar",
+    "side": "both"
+  },
+  "Companions!": {
+    "filename": "companions-neoforge-1.21.1-1.2.4.jar",
+    "side": "both"
+  },
+  "Configured": {
+    "filename": "configured-neoforge-1.21.1-2.6.3.jar",
+    "side": "both"
+  },
+  "Controlling": {
+    "filename": "Controlling-neoforge-1.21.1-19.0.5.jar",
+    "side": "both"
+  },
+  "Create: Copycats+": {
+    "filename": "copycats-3.0.4+mc.1.21.1-neoforge.jar",
+    "side": "both"
+  },
+  "CorgiLib": {
+    "filename": "Corgilib-NeoForge-1.21.1-5.0.0.9.jar",
+    "side": "both"
+  },
+  "Crabber's Delight": {
+    "filename": "crabbersdelight-1.21.1-1.2.6.jar",
+    "side": "both"
+  },
+  "CraftTweaker": {
+    "filename": "CraftTweaker-neoforge-1.21.1-21.0.38.jar",
+    "side": "both"
+  },
+  "Crash Assistant": {
+    "filename": "CrashAssistant-neoforge-1.20.6-1.21.4-1.11.10.jar",
+    "side": "client"
+  },
+  "Create Aeronautics": {
+    "filename": "create-aeronautics-bundled-1.21.1-1.3.0.jar",
+    "side": "both"
+  },
+  "Create Better FPS": {
+    "filename": "createbetterfps-1.21.1-1.1.4.jar",
+    "side": "both"
+  },
+  "Create: Central Kitchen": {
+    "filename": "create-central-kitchen-2.5.0.jar",
+    "side": "both"
+  },
+  "Create: Compatible Storage": {
+    "filename": "create_compatible_storage-2.11.0-neoforge.jar",
+    "side": "both"
+  },
+  "Create Confectionery": {
+    "filename": "create-confectionery1.21.1_v1.1.3b.jar",
+    "side": "both"
+  },
+  "Create: Continuum (Vanilla Backport Integration)": {
+    "filename": "create_continuum-1.0.0-1.21.1-neoforge.jar",
+    "side": "both"
+  },
+  "Create Deco": {
+    "filename": "createdeco-2.1.3.jar",
+    "side": "both"
+  },
+  "Create: Design n' Decor": {
+    "filename": "Design-n-Decor-1.21.1-2.2b.jar",
+    "side": "both"
+  },
+  "Create: Dragons Plus": {
+    "filename": "CreateDragonsPlus-1.11.2b.jar",
+    "side": "both"
+  },
+  "Create Encased": {
+    "filename": "Create Encased-1.21.1-1.8.1-ht1.jar",
+    "side": "both"
+  },
+  "Create: Enchantment Industry": {
+    "filename": "create-enchantment-industry-2.5.0-preview-alpha1.jar",
+    "side": "both"
+  },
+  "Create: Extra Gauges": {
+    "filename": "extra_gauges-2.1.2.jar",
+    "side": "both"
+  },
+  "Create: Liquid Fuel": {
+    "filename": "createliquidfuel-2.1.1-1.21.1.jar",
+    "side": "both"
+  },
+  "Create: Luminous": {
+    "filename": "createluminous-1.3.1.jar",
+    "side": "both"
+  },
+  "Create : Misc & Things": {
+    "filename": "create_things_and_misc-4.1.1-neoforge-1.21.1.jar",
+    "side": "both"
+  },
+  "Create: More Girder": {
+    "filename": "create-more-girder-2.1.1-neo.jar",
+    "side": "both"
+  },
+  "Create: Create O' Plenty (Create + Biomes O' Plenty Mod compat)": {
+    "filename": "CreateOPlenty-NeoForge-Create+6.0.7-3.0.jar",
+    "side": "both"
+  },
+  "Create: Oh The Biomes We've Gone Compat": {
+    "filename": "create-otbwg-compat-1.0.jar",
+    "side": "both"
+  },
+  "Create: Power Loader": {
+    "filename": "create_power_loader-2.0.5-mc1.21.1.jar",
+    "side": "both"
+  },
+  "Create: Rustic Structures": {
+    "filename": "create_rustic_structures-1.0.1-neoforge-1.21.1.jar",
+    "side": "both"
+  },
+  "Create: Stam1o Tweaks": {
+    "filename": "Stam1oCreateTweaks-1.0.8+1.21.1-Neo.jar",
+    "side": "both"
+  },
+  "Create Stuff 'N Additions": {
+    "filename": "create-stuff-additions1.21.1_v2.1.4a.jar",
+    "side": "both"
+  },
+  "Create: Stuff 'N Additions - Tank Fix (Spout, Curios & Upgrade)": {
+    "filename": "createsa_tank_fix-1.3.jar",
+    "side": "both"
+  },
+  "Create Stuff 'N Additions x Sable & Aeronautics Compat": {
+    "filename": "SableStuffAdditionsCompat v1.0.3-1.21.1.jar",
+    "side": "both"
+  },
+  "Create: Ultimate Factory": {
+    "filename": "create_ultimate_factory-2.2.4-neoforge-1.21.1.jar",
+    "side": "both"
+  },
+  "Create: Vibrant Vaults": {
+    "filename": "create_vibrant_vaults-0.3.2.jar",
+    "side": "both"
+  },
+  "Create": {
+    "filename": "create-1.21.1-6.0.10.jar",
+    "side": "both"
+  },
+  "Create Crafts & Additions": {
+    "filename": "createaddition-1.6.0.jar",
+    "side": "both"
+  },
+  "Creeper Overhaul": {
+    "filename": "CreeperOverhaul-neoforge-1.21.1-4.0.6.jar",
+    "side": "both"
+  },
+  "Cristel Lib": {
+    "filename": "cristellib-neoforge-1.21.1-3.1.7.jar",
+    "side": "both"
+  },
+  "Cultural Delights": {
+    "filename": "culturaldelights-0.17.8.jar",
+    "side": "both"
+  },
+  "Cupboard": {
+    "filename": "cupboard-1.21.1-3.8.jar",
+    "side": "both"
+  },
+  "Curios API (Forge/NeoForge)": {
+    "filename": "curios-neoforge-9.5.1+1.21.1.jar",
+    "side": "both"
+  },
+  "Cut Through": {
+    "filename": "CutThrough-v21.1.0-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "Decorative Blocks Reborn": {
+    "filename": "DecorativeBlocks-Reborn-neoforge-1.21.1-6.0.2.jar",
+    "side": "both"
+  },
+  "Create: Deployer API": {
+    "filename": "deployer-0.1.2.jar",
+    "side": "both"
+  },
+  "Display Delight": {
+    "filename": "displaydelight-1.7.0.jar",
+    "side": "both"
+  },
+  "Doped Horses - Faster, Enchantable & Configurable horses": {
+    "filename": "dopedhorses-neoforge-1.2.4-1.21.1.jar",
+    "side": "both"
+  },
+  "Dynamic FPS": {
+    "filename": "dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar",
+    "side": "client"
+  },
+  "Easy Anvils": {
+    "filename": "EasyAnvils-v21.1.0-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "Easy Magic": {
+    "filename": "EasyMagic-v21.1.4-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "Enchantment Descriptions": {
+    "filename": "enchdesc-neoforge-1.21.1-21.1.10.jar",
+    "side": "client"
+  },
+  "Enderman Overhaul": {
+    "filename": "endermanoverhaul-neoforge-1.21.1-2.0.3.jar",
+    "side": "both"
+  },
+  "[EMF] Entity Model Features [Fabric & Forge]": {
+    "filename": "entity_model_features-3.2.4-1.21-neoforge.jar",
+    "side": "client"
+  },
+  "[ETF] Entity Texture Features - [Fabric & Forge]": {
+    "filename": "entity_texture_features_1.21-neoforge-7.1.jar",
+    "side": "client"
+  },
+  "Entity Culling Fabric/Forge": {
+    "filename": "entityculling-neoforge-1.10.5-mc1.21.1.jar",
+    "side": "client"
+  },
+  "[ESC] Extra Special Core": {
+    "filename": "extraspecialcore-1.21.1-1.0.0-neoforge.jar",
+    "side": "both"
+  },
+  "Euphonium": {
+    "filename": "euphonium-1.0.3+1.21.jar",
+    "side": "client"
+  },
+  "Every Compat (Wood Good)": {
+    "filename": "everycomp-1.21-2.11.46-neoforge.jar",
+    "side": "both"
+  },
+  "ExtraSounds Next": {
+    "filename": "extrasounds-1.5.4+1.21.1-neoforge.jar",
+    "side": "client"
+  },
+  "Farmer's Cutting: Biomes O' Plenty": {
+    "filename": "farmers-cutting-biomes-o-plenty-2.0.0-1.21.jar",
+    "side": "server"
+  },
+  "Farmer's Cutting: Oh The Biomes We've Gone": {
+    "filename": "farmers-cutting-oh-the-biomes-weve-gone-1.21.1-2.1-neoforge.jar",
+    "side": "server"
+  },
+  "Farmer's Cutting: Quark": {
+    "filename": "farmers-cutting-quark-1.21.1-1.0.jar",
+    "side": "server"
+  },
+  "Farmer's Delight": {
+    "filename": "FarmersDelight-1.21.1-1.3.2.jar",
+    "side": "both"
+  },
+  "FastFurnace": {
+    "filename": "FastFurnace-1.21.1-9.0.1.jar",
+    "side": "both"
+  },
+  "FastSuite": {
+    "filename": "FastSuite-1.21.1-6.0.7.jar",
+    "side": "both"
+  },
+  "FastWorkbench": {
+    "filename": "FastWorkbench-1.21.1-9.1.3.jar",
+    "side": "both"
+  },
+  "FerriteCore ((Neo)Forge)": {
+    "filename": "ferritecore-7.0.3-neoforge.jar",
+    "side": "both"
+  },
+  "Fintastic Supreme": {
+    "filename": "fintastic_supreme-1.0.0-mc1.21.1-neoforge.jar",
+    "side": "both"
+  },
+  "Flerovium": {
+    "filename": "flerovium-neoforge-1.21.1-1.1.1-all.jar",
+    "side": "client"
+  },
+  "Forgified Fabric API": {
+    "filename": "forgified-fabric-api-0.116.7+2.2.4+1.21.1.jar",
+    "side": "both"
+  },
+  "Fowl Play": {
+    "filename": "fowlplay-1.2.1+1.21.1-neoforge.jar",
+    "side": "both"
+  },
+  "Fragmentum [NeoForge Edition]": {
+    "filename": "fragmentum-neoforge-1.21.1-2.2.4.jar",
+    "side": "both"
+  },
+  "Freecam": {
+    "filename": "freecam-neoforge-1.3.0+mc1.21.jar",
+    "side": "client"
+  },
+  "Friends For Life": {
+    "filename": "friendsforlife-1.2.1.jar",
+    "side": "both"
+  },
+  "Fruits Delight": {
+    "filename": "fruitsdelight-1.2.14.jar",
+    "side": "both"
+  },
+  "Fungi Delight (Farmers Delight Addon)": {
+    "filename": "FungiDelight-1.21.1-1.3.jar",
+    "side": "both"
+  },
+  "Fzzy Config": {
+    "filename": "fzzy_config-0.7.6+1.21+neoforge.jar",
+    "side": "both"
+  },
+  "GeckoLib": {
+    "filename": "geckolib-neoforge-1.21.1-4.9.2.jar",
+    "side": "both"
+  },
+  "Get It Together, Drops!": {
+    "filename": "getittogetherdrops-neoforge-1.21.5-1.4.jar",
+    "side": "both"
+  },
+  "GlitchCore": {
+    "filename": "GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+    "side": "both"
+  },
+  "GraveStone Mod": {
+    "filename": "gravestone-neoforge-1.21.1-1.0.37.jar",
+    "side": "both"
+  },
+  "Gravestone x Curios API Compat": {
+    "filename": "gravestonecurioscompat-1.21.1-NeoForge-4.0.2.jar",
+    "side": "both"
+  },
+  "Hopo Better Underwater Ruins": {
+    "filename": "HopoBetterUnderwaterRuins-[1.21.1-1.21.3]-1.2.1b.jar",
+    "side": "server"
+  },
+  "Horseman": {
+    "filename": "horseman-neoforge-1.21.1-1.5.11.jar",
+    "side": "both"
+  },
+  "Hybrid Aquatic": {
+    "filename": "[1.21.1-Neoforge] Hybrid Aquatic 1.5.5.jar",
+    "side": "both"
+  },
+  "Iceberg [Neo/Forge]": {
+    "filename": "Iceberg-1.21.1-neoforge-1.3.2.jar",
+    "side": "both"
+  },
+  "ImmediatelyFast": {
+    "filename": "ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar",
+    "side": "client"
+  },
+  "Immersive Aircraft": {
+    "filename": "immersive_aircraft-1.4.6+1.21.1-neoforge.jar",
+    "side": "both"
+  },
+  "Immersive Armors": {
+    "filename": "immersive_armors-1.7.6+1.21.1-neoforge.jar",
+    "side": "both"
+  },
+  "Immersive Furniture": {
+    "filename": "immersive_furniture-neoforge-0.2.2+1.21.1.jar",
+    "side": "both"
+  },
+  "Immersive Melodies": {
+    "filename": "immersive_melodies-neoforge-0.6.4+1.21.1.jar",
+    "side": "both"
+  },
+  "Immersive Optimization": {
+    "filename": "immersive_optimization-neoforge-1.21-0.1.6.jar",
+    "side": "server"
+  },
+  "Immersive Paintings": {
+    "filename": "immersive_paintings-neoforge-1.21.1-0.7.8.jar",
+    "side": "both"
+  },
+  "Item Highlighter [Neo/Forge]": {
+    "filename": "Highlighter-1.21-neoforge-1.1.11.jar",
+    "side": "client"
+  },
+  "Jade \ud83d\udd0d": {
+    "filename": "Jade-1.21.1-NeoForge-15.10.5.jar",
+    "side": "both"
+  },
+  "Just Enough Items (JEI)": {
+    "filename": "jei-1.21.1-neoforge-19.36.0.360.jar",
+    "side": "both"
+  },
+  "Just Enough Professions (JEP)": {
+    "filename": "JustEnoughProfessions-neoforge-1.21.1-4.0.5.jar",
+    "side": "client"
+  },
+  "Just Enough Resources (JER)": {
+    "filename": "JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar",
+    "side": "both"
+  },
+  "Just Enough Breeding (JEBr)": {
+    "filename": "justenoughbreeding-neoforge-1.21.1-3.1.0.jar",
+    "side": "both"
+  },
+  "Knight Lib": {
+    "filename": "knightlib-neoforge-1.21.1-1.6.1.jar",
+    "side": "both"
+  },
+  "Kotlin for Forge": {
+    "filename": "kotlinforforge-5.12.0-all.jar",
+    "side": "both"
+  },
+  "Krypton Reno": {
+    "filename": "krypton_fnp-neoforge-1.21.1-0.2.28.1-1.21.1.jar",
+    "side": "both"
+  },
+  "Leaves Be Gone": {
+    "filename": "LeavesBeGone-v21.1.1-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "Lithium (Fabric/NeoForge)": {
+    "filename": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+    "side": "both"
+  },
+  "Lithostitched": {
+    "filename": "lithostitched-1.7.13-neoforge-21.1.jar",
+    "side": "both"
+  },
+  "Lodestone": {
+    "filename": "lodestone-1.21.1-1.8.2.jar",
+    "side": "both"
+  },
+  "Log Begone": {
+    "filename": "logbegone-neoforge-1.21.1-1.0.3.jar",
+    "side": "both"
+  },
+  "Longwings": {
+    "filename": "Longwings-v0.9.5-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "Loot Integrations: Structory & Towers": {
+    "filename": "lootintegrations_structory-1.4.jar",
+    "side": "server"
+  },
+  "Loot Integrations: Towns and Towers": {
+    "filename": "lootintegration_townsandtowers-1.4.jar",
+    "side": "server"
+  },
+  "Loot Integrations": {
+    "filename": "lootintegrations-1.21.1-4.7.jar",
+    "side": "server"
+  },
+  "Loot Journal: Pickup Notifier [NeoForge Edition]": {
+    "filename": "loot_journal-neoforge-1.21.1-6.2.1.jar",
+    "side": "client"
+  },
+  "Lootr (Forge & NeoForge)": {
+    "filename": "lootr-neoforge-1.21.1-1.11.37.121.jar",
+    "side": "both"
+  },
+  "LUMINOUS: OVERWORLD": {
+    "filename": "Luminous Overworld V1.5.52 -NeoForge 1.21.1.jar",
+    "side": "both"
+  },
+  "LUMINOUS TAG": {
+    "filename": "Luminous Tag V1.1 - NeoForge 1.21.1.jar",
+    "side": "both"
+  },
+  "Macaw's Biomes O' Plenty": {
+    "filename": "mcwbiomesoplenty-neoforge-1.21.1-1.6.jar",
+    "side": "both"
+  },
+  "Macaw's Oh The Biomes You'll Go / We've Gone": {
+    "filename": "mcwbyg-neoforge-1.21.1-1.6.jar",
+    "side": "both"
+  },
+  "Macaw's Doors": {
+    "filename": "mcw-doors-1.1.5-mc1.21.1neoforge.jar",
+    "side": "both"
+  },
+  "Macaw's Fences and Walls": {
+    "filename": "mcw-mcwfences-1.2.1-mc1.21.1neoforge.jar",
+    "side": "both"
+  },
+  "Macaw's Lights and Lamps": {
+    "filename": "mcw-lights-1.1.5-mc1.21.1neoforge.jar",
+    "side": "both"
+  },
+  "Macaw's Paths and Pavings": {
+    "filename": "mcw-mcwpaths-1.1.1-mc1.21.1neoforge.jar",
+    "side": "both"
+  },
+  "Macaw's Trapdoors": {
+    "filename": "mcw-trapdoors-1.1.5-mc1.21.1neoforge.jar",
+    "side": "both"
+  },
+  "Macaw's Windows": {
+    "filename": "mcw-mcwwindows-2.4.2-mc1.21.1neoforge.jar",
+    "side": "both"
+  },
+  "Sodium/Embeddium Extras": {
+    "filename": "sodiumextras-neoforge-1.0.8-1.21.1.jar",
+    "side": "both"
+  },
+  "More Axolotl Variants API": {
+    "filename": "mavapi-fabric-1.3.0-mc1.21.1.jar",
+    "side": "both"
+  },
+  "More Axolotl Variants Mod": {
+    "filename": "mavm-fabric-1.3.1-mc1.21.1.jar",
+    "side": "both"
+  },
+  "McQoy": {
+    "filename": "mcqoy-0.4.1+neo-1.21.jar",
+    "side": "client"
+  },
+  "Miner's Delight +": {
+    "filename": "minersdelight-1.21.1-1.4.5.jar",
+    "side": "both"
+  },
+  "Mod Menu (NeoForge Edition)": {
+    "filename": "Mod Menu (NeoForge Edition) 1.21.1-1.0.2.jar",
+    "side": "client"
+  },
+  "ModernFix": {
+    "filename": "modernfix-neoforge-5.27.15+mc1.21.1.jar",
+    "side": "both"
+  },
+  "MonoLib": {
+    "filename": "monolib-neoforge-1.21.1-4.0.2.jar",
+    "side": "both"
+  },
+  "More Cat Variants": {
+    "filename": "morecatvariants-neoforge-0.0.2+1.21.jar",
+    "side": "both"
+  },
+  "MoreCulling": {
+    "filename": "moreculling-neoforge-1.21.1-1.0.8.jar",
+    "side": "client"
+  },
+  "Mouse Tweaks": {
+    "filename": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+    "side": "client"
+  },
+  "MouseTweaks x Accessories Fix": {
+    "filename": "mousetweaks-x-accessories-fix-1.4.0.jar",
+    "side": "client"
+  },
+  "Mushroom Quest": {
+    "filename": "MushroomQuest-NeoForge-1.21.1-v4.3.2.jar",
+    "side": "both"
+  },
+  "My Nether's Delight": {
+    "filename": "MyNethersDelight-1.21.1-1.10.2.jar",
+    "side": "both"
+  },
+  "Naturalist": {
+    "filename": "naturalist-1.0.2-neoforge-1.21.1.jar",
+    "side": "both"
+  },
+  "Nature's Compass": {
+    "filename": "NaturesCompass-1.21.1-3.4.0-neoforge.jar",
+    "side": "both"
+  },
+  "Night Lights": {
+    "filename": "nightlights-neoforge-1.3.0.jar",
+    "side": "both"
+  },
+  "Observable": {
+    "filename": "observable-5.4.4.jar",
+    "side": "both"
+  },
+  "Ocean's\u00a0Delight": {
+    "filename": "oceansdelight-neoforge-1.0.4-1.21.1.jar",
+    "side": "both"
+  },
+  "Oh The Biomes We've Gone": {
+    "filename": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.0.jar",
+    "side": "both"
+  },
+  "Oh The Trees You'll Grow": {
+    "filename": "Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.3.2.jar",
+    "side": "both"
+  },
+  "Ok Zoomer - It's Zoom!": {
+    "filename": "ok_zoomer-neo-10.0.0-beta.13.jar",
+    "side": "both"
+  },
+  "Overflowing Bars": {
+    "filename": "OverflowingBars-v21.1.1-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "Overweight Farming": {
+    "filename": "OverweightFarming-1.21.1-2.2.0-NeoForge.jar",
+    "side": "both"
+  },
+  "o\u03c9o (owo-lib)": {
+    "filename": "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
+    "side": "both"
+  },
+  "Particular \u2728 Reforged": {
+    "filename": "particular-1.21.1-NeoForge-1.5.5.jar",
+    "side": "both"
+  },
+  "Party Creepers": {
+    "filename": "PartyCreepers-v21.1.1-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "Patchouli": {
+    "filename": "Patchouli-1.21.1-93-NEOFORGE.jar",
+    "side": "both"
+  },
+  "Ping to Map: Xaero's Minimap & Ping Wheel Addon": {
+    "filename": "pingtomapxaeros-1.1.0-neoforge-1.21.1.jar",
+    "side": "both"
+  },
+  "Ping Wheel": {
+    "filename": "Ping-Wheel-1.12.2-neoforge-1.21.1.jar",
+    "side": "both"
+  },
+  "Placebo": {
+    "filename": "Placebo-1.21.1-9.9.1.jar",
+    "side": "both"
+  },
+  "Platform": {
+    "filename": "Platform-neoforge-1.21.1-1.3.3.jar",
+    "side": "both"
+  },
+  "Player Animation Library": {
+    "filename": "PlayerAnimationLibNeoforge-1.1.4+mc.1.21.1.jar",
+    "side": "both"
+  },
+  "playerAnimator": {
+    "filename": "player-animation-lib-forge-2.0.4+1.21.1.jar",
+    "side": "both"
+  },
+  "Polymorph (Fabric/Forge/Quilt)": {
+    "filename": "polymorph-neoforge-1.1.0+1.21.1.jar",
+    "side": "both"
+  },
+  "Presence Footsteps (NeoForge)": {
+    "filename": "PresenceFootsteps-1.21.1-1.12.0-beta.1-1.21NeoForge.jar",
+    "side": "client"
+  },
+  "Presence Footsteps x Sable (Aeronautics Compat)": {
+    "filename": "pfsable-1.0.jar",
+    "side": "client"
+  },
+  "Prickle": {
+    "filename": "prickle-neoforge-1.21.1-21.1.11.jar",
+    "side": "both"
+  },
+  "Pufferfish's Biome Dither [Fabric & Forge & NeoForge]": {
+    "filename": "puffish_biome_dither-1.0.0-1.21-neoforge.jar",
+    "side": "both"
+  },
+  "Puzzles Lib": {
+    "filename": "PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "Quark": {
+    "filename": "Quark-4.1-481.jar",
+    "side": "both"
+  },
+  "Random Mob Sizes": {
+    "filename": "randommobsizes-neoforge-1.21.1-2.2.2.jar",
+    "side": "both"
+  },
+  "Realistic Bees": {
+    "filename": "realisticbees-1.21.1-4.2.jar",
+    "side": "both"
+  },
+  "Resourceful Config": {
+    "filename": "resourcefulconfig-neoforge-1.21-3.0.11.jar",
+    "side": "both"
+  },
+  "Resourceful Lib": {
+    "filename": "resourcefullib-neoforge-1.21-3.0.12.jar",
+    "side": "both"
+  },
+  "Ribbits": {
+    "filename": "Ribbits-1.21.1-NeoForge-4.1.6.jar",
+    "side": "both"
+  },
+  "Rustic Delight": {
+    "filename": "rusticdelight-neoforge-1.21-1.6.1.jar",
+    "side": "both"
+  },
+  "Sable x Xaero Bridge": {
+    "filename": "sable_xaero_bridge-0.1.11.jar",
+    "side": "both"
+  },
+  "Sable": {
+    "filename": "sable-neoforge-1.21.1-2.0.3.jar",
+    "side": "both"
+  },
+  "Searchables": {
+    "filename": "Searchables-neoforge-1.21.1-1.0.2.jar",
+    "side": "both"
+  },
+  "Moonlight Lib": {
+    "filename": "moonlight-neoforge-1.21.1-3.0.22.jar",
+    "side": "both"
+  },
+  "Simple Music Control": {
+    "filename": "simple_music_control-1.3.7+1.21.1.jar",
+    "side": "client"
+  },
+  "Simple Weather": {
+    "filename": "simple_weather-1.0.13-hotfix.jar",
+    "side": "client"
+  },
+  "Sinytra Connector": {
+    "filename": "connector-2.0.0-beta.15+1.21.1-full.jar",
+    "side": "both"
+  },
+  "Create Slice & Dice": {
+    "filename": "sliceanddice-forge-4.2.4.jar",
+    "side": "both"
+  },
+  "SmartBrainLib (Forge/Fabric/Quilt)": {
+    "filename": "SmartBrainLib-neoforge-1.21.1-1.16.11.jar",
+    "side": "both"
+  },
+  "Sodium": {
+    "filename": "sodium-neoforge-0.8.12+mc1.21.1.jar",
+    "side": "client"
+  },
+  "Sophisticated Backpacks Create Integration": {
+    "filename": "sophisticatedbackpackscreateintegration-1.21.1-0.1.8.134.jar",
+    "side": "both"
+  },
+  "Sophisticated Backpacks": {
+    "filename": "sophisticatedbackpacks-1.21.1-3.25.69.1979.jar",
+    "side": "both"
+  },
+  "Sophisticated Core": {
+    "filename": "sophisticatedcore-1.21.1-1.4.70.2131.jar",
+    "side": "both"
+  },
+  "Sophisticated Item Actions": {
+    "filename": "sophisticateditemactions-1.21.1-0.5.8.342.jar",
+    "side": "both"
+  },
+  "Sophisticated Storage Create Integration": {
+    "filename": "sophisticatedstoragecreateintegration-1.21.1-0.1.19.186.jar",
+    "side": "both"
+  },
+  "Sophisticated Storage in Motion": {
+    "filename": "sophisticatedstorageinmotion-1.21.1-0.10.32.317.jar",
+    "side": "both"
+  },
+  "Sophisticated Storage": {
+    "filename": "sophisticatedstorage-1.21.1-1.5.71.1949.jar",
+    "side": "both"
+  },
+  "Sound Physics Remastered": {
+    "filename": "sound-physics-remastered-neoforge-1.21.1-1.5.1.jar",
+    "side": "both"
+  },
+  "spark": {
+    "filename": "spark-1.10.124-neoforge.jar",
+    "side": "both"
+  },
+  "StarbuncleMania": {
+    "filename": "starbunclemania-1.21.1-1.5.7.jar",
+    "side": "both"
+  },
+  "StateObserver": {
+    "filename": "stateobserver-neoforge-1.21.1-1.6.4.jar",
+    "side": "both"
+  },
+  "Steam 'n' Rails Neoforge": {
+    "filename": "railways-0.3.0-alpha.2+neoforge-mc1.21.1.jar",
+    "side": "both"
+  },
+  "Every Compat (Stone Zone)": {
+    "filename": "stonezone-1.21-2.11.16-neoforge.jar",
+    "side": "both"
+  },
+  "Straw Statues": {
+    "filename": "StrawStatues-v21.1.0-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "Structory: Towers": {
+    "filename": "Structory_Towers_26.1_v1.0.16.jar",
+    "side": "both"
+  },
+  "Structory": {
+    "filename": "Structory_26.2_v1.3.7.jar",
+    "side": "server"
+  },
+  "Structure Layout Optimizer": {
+    "filename": "structure_layout_optimizer-neoforge-1.0.12.jar",
+    "side": "both"
+  },
+  "Supplementaries": {
+    "filename": "supplementaries-neoforge-1.21.1-3.7.7.jar",
+    "side": "both"
+  },
+  "TerraBlender (NeoForge)": {
+    "filename": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+    "side": "both"
+  },
+  "Terralith ReStoned": {
+    "filename": "Terralith_Restoned_v1.3.jar",
+    "side": "server"
+  },
+  "Terralith": {
+    "filename": "Terralith_1.21.x_v2.6.2.jar",
+    "side": "both"
+  },
+  "The Immersive Music Mod": {
+    "filename": "timm-1.1-neoforge-1.21.jar",
+    "side": "client"
+  },
+  "Tide 2": {
+    "filename": "tide-neoforge-1.21.1-2.1.jar",
+    "side": "both"
+  },
+  "Tide's Delight": {
+    "filename": "tidesdelight-1.21.1-1.2.0-neoforge.jar",
+    "side": "both"
+  },
+  "Tiny Skeletons": {
+    "filename": "TinySkeletons-v21.1.0-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "Towns and Towers": {
+    "filename": "t_and_t-neoforge-fabric-1.13.9+1.21.1.jar",
+    "side": "both"
+  },
+  "Trading Post": {
+    "filename": "TradingPost-v21.1.1-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "TxniLib": {
+    "filename": "txnilib-neoforge-1.0.24-1.21.1.jar",
+    "side": "both"
+  },
+  "VanillaBackport: Mob Variants Compat": {
+    "filename": "vb-mob-variants-compat-1.4.1.jar",
+    "side": "both"
+  },
+  "VanillaBackport X Farmer's Delight Compat": {
+    "filename": "Delightful-Backport-1.0-1.21.1-neoforge.jar",
+    "side": "both"
+  },
+  "Vanilla Backport": {
+    "filename": "VanillaBackport-neoforge-1.21.1-1.1.7.10.jar",
+    "side": "both"
+  },
+  "Van Backport Compat": {
+    "filename": "vb-compat-2.1-1.21.1.jar",
+    "side": "both"
+  },
+  "Veggies Delight (A Farmer's Delight Add-on)": {
+    "filename": "VeggiesDelight-1.21.1-1.9.2.jar",
+    "side": "both"
+  },
+  "Villager Names": {
+    "filename": "villagernames-1.21.1-8.5.jar",
+    "side": "server"
+  },
+  "Visual Workbench": {
+    "filename": "VisualWorkbench-v21.1.1-1.21.1-NeoForge.jar",
+    "side": "both"
+  },
+  "Waystones: Sable (Create Aeronautics Addon)": {
+    "filename": "waystonessable-1.0.5.jar",
+    "side": "both"
+  },
+  "Waystones Teleport Pets": {
+    "filename": "WaystonesTeleportPets-1.2-neoforge-1.21.1.jar",
+    "side": "server"
+  },
+  "Waystones": {
+    "filename": "waystones-neoforge-1.21.1-21.1.36.jar",
+    "side": "both"
+  },
+  "Xaero Train Map": {
+    "filename": "xaerotrainmap-1.0.0.jar",
+    "side": "client"
+  },
+  "Xaero's Maps x Waystones": {
+    "filename": "xmxw-2.11.1+1.21.1-neoforge.jar",
+    "side": "both"
+  },
+  "Xaero's Minimap": {
+    "filename": "xaerominimap-neoforge-1.21.1-26.2.1.jar",
+    "side": "both"
+  },
+  "Xaero's World Map": {
+    "filename": "xaeroworldmap-neoforge-1.21.1-1.42.0.jar",
+    "side": "both"
+  },
+  "YetAnotherConfigLib": {
+    "filename": "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+    "side": "both"
+  },
+  "Yung Structures Addon for Loot Integrations": {
+    "filename": "lootintegrations_yungs-1.6.jar",
+    "side": "server"
+  },
+  "YUNG's API (NeoForge) [1.20.4-1.21.1 ONLY]": {
+    "filename": "YungsApi-1.21.1-NeoForge-5.1.6.jar",
+    "side": "both"
+  },
+  "YUNG's Better Desert Temples (NeoForge) [1.20.4 - 1.21.1 ONLY]": {
+    "filename": "YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar",
+    "side": "both"
+  },
+  "YUNG's Better Dungeons (NeoForge) [1.20.4 - 1.21.1 ONLY]": {
+    "filename": "YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar",
+    "side": "both"
+  },
+  "YUNG's Better End Island (NeoForge)": {
+    "filename": "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+    "side": "both"
+  },
+  "YUNG's Better Jungle Temples (NeoForge) [1.20.4 - 1.21.1 ONLY]": {
+    "filename": "YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar",
+    "side": "both"
+  },
+  "YUNG's Better Mineshafts (NeoForge)": {
+    "filename": "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+    "side": "both"
+  },
+  "YUNG's Better Nether Fortresses (NeoForge) [1.20.4 - 1.21.1 ONLY]": {
+    "filename": "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
+    "side": "both"
+  },
+  "YUNG's Better Ocean Monuments (NeoForge) [1.20.4 - 1.21.1 ONLY]": {
+    "filename": "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
+    "side": "both"
+  },
+  "YUNG's Better Strongholds (NeoForge) [1.20.4 - 1.21.1 ONLY]": {
+    "filename": "YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar",
+    "side": "both"
+  },
+  "YUNG's Better Witch Huts (NeoForge) [1.20.4 - 1.21.1 ONLY]": {
+    "filename": "YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar",
+    "side": "both"
+  },
+  "YUNG's Bridges (NeoForge) [1.20.4 - 1.21.1 ONLY]": {
+    "filename": "YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+    "side": "both"
+  },
+  "YUNG's Cave Biomes (Forge/NeoForge)": {
+    "filename": "YungsCaveBiomes-1.21.1-NeoForge-3.1.1.jar",
+    "side": "both"
+  },
+  "YUNG's Extras (NeoForge) [1.20.4 - 1.21.1 ONLY]": {
+    "filename": "YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+    "side": "both"
+  },
+  "YUNG's Menu Tweaks (NeoForge) [1.20.4 - 1.21.1 ONLY]": {
+    "filename": "YungsMenuTweaks-1.21.1-NeoForge-2.1.2.jar",
+    "side": "both"
+  },
+  "Zeta": {
+    "filename": "Zeta-1.1-40.jar",
+    "side": "both"
+  }
+}

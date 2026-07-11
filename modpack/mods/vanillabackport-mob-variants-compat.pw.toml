@@ -1,0 +1,13 @@
+name = "VanillaBackport: Mob Variants Compat"
+filename = "vb-mob-variants-compat-1.4.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cbd0f20fbefcee311dccc66947722d94124db5ee"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8242862
+project-id = 1574304

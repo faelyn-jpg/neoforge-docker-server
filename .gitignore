@@ -6,3 +6,6 @@ worlds/
 config.json
 modpack/*.zip
 **/__pycache__
+scripts/packwiz-installer-bootstrap.jar
+packwiz-installer.jar
+*.jar
