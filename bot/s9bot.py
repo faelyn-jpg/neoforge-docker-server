@@ -20,13 +20,13 @@ async def on_ready():
     except Exception as e:
         print(e)
 
-@bot.tree.command(name="start", description="Start PC and a server")
+@bot.tree.command(name="wake", description="Start PC and a server")
 @app_commands.describe(target_server="Which server to start (default: survival)")
 @app_commands.choices(target_server=[
 app_commands.Choice(name="survival", value="survival"),
 app_commands.Choice(name="creative", value="creative"),
 ])
-async def start(interaction: discord.Interaction, target_server: str = "survival"):
+async def wake(interaction: discord.Interaction, target_server: str = "survival"):
     try: 
         await interaction.response.send_message(f"FurberBot is sleeping... I wake him up!")
         send_magic_packet(os.getenv("MAC_ADDRESS"))
