@@ -1,8 +1,14 @@
 {
-  "version": "1.0.7",
+  "version": "1.0.8",
   "added": {},
   "removed": {},
-  "updated": {},
-  "notes": "fix datapack",
-  "changelog": "\n### Notes\nfix datapack"
+  "updated": {
+    "Crash Assistant": {
+      "before": "CrashAssistant-neoforge-1.20.6-1.21.4-1.11.10.jar",
+      "after": "CrashAssistant-neoforge-1.20.6-1.21.4-1.11.11.jar",
+      "side": "client"
+    }
+  },
+  "notes": "revert hybrid aquatic",
+  "changelog": "### Updated\n- Crash Assistant (client): CrashAssistant-neoforge-1.20.6-1.21.4-1.11.10.jar \u2192 CrashAssistant-neoforge-1.20.6-1.21.4-1.11.11.jar\n\n### Notes\nrevert hybrid aquatic"
 }

@@ -578,7 +578,7 @@ hash = "cae5ba66971b2f61e0b523c5aeb8b8d4fa806f0bea8a1709860e4fea94426ac9"
 
 [[files]]
 file = "config/bcc-common.toml"
-hash = "ea9754467d9fcca77214ab7784a640207d58175d1f6193fd8060ec70a844e366"
+hash = "aa5f0f4495c52ae12a9d6ac3430c756270f39cd4fe1a7b97782e9c84d38c86b5"
 
 [[files]]
 file = "config/betterchunkloading.json"
@@ -2153,7 +2153,7 @@ metafile = true
 
 [[files]]
 file = "mods/crash-assistant.pw.toml"
-hash = "2de399fb6edc699bf32a9c300864aebd3552e6b29a8283031204d9f4ce3f0796"
+hash = "b62b1c14b4f2d75bfb7277ea82258d6f94f84cb451f5fd7d6caff3a7fa0bff11"
 metafile = true
 
 [[files]]
@@ -2533,7 +2533,7 @@ metafile = true
 
 [[files]]
 file = "mods/hybrid-aquatic.pw.toml"
-hash = "371ece4e1ade947fd879e0a056d641e1047daf584ef57b7df7ceb45c5d4f942c"
+hash = "b5c3280e6ee6c10d8f2f9cc926a708756624d6dc79e62b91ef7b16c1295b944c"
 metafile = true
 
 [[files]]
@@ -3310,6 +3310,10 @@ metafile = true
 file = "mods/zeta.pw.toml"
 hash = "d1baffd370868590fcb2785146c278df5781d20994022749c53c0f9b2bffc7fc"
 metafile = true
+
+[[files]]
+file = "packwiz-installer.jar"
+hash = "c9f646908d340d84773948a9a7d98bc1dae250d35e1016dc6e2b8459760b5598"
 
 [[files]]
 file = "supplementaries-compat.pw.toml"
