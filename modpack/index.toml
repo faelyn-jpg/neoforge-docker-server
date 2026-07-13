@@ -1938,7 +1938,7 @@ metafile = true
 
 [[files]]
 file = "mods/amendments.pw.toml"
-hash = "37e53b6dc2af8dee7c2994d79fcfc33e4d90d9481c6b0986ad7b7b29cec00979"
+hash = "f50e9b66d0be7909fd407bf2e0b572ae04a26be595535dd8e1414a990bc890d2"
 metafile = true
 
 [[files]]
@@ -1993,7 +1993,7 @@ metafile = true
 
 [[files]]
 file = "mods/astikor-carts-redux.pw.toml"
-hash = "862032c74a95cbf73638bb5afed2de24e96f3665fe22c6c1b14f1203c46e437c"
+hash = "09a54bd6a5328267b2503f87157fc6ebf82ed1c04d7777a5f379b8270b5d0c27"
 metafile = true
 
 [[files]]
@@ -2533,7 +2533,7 @@ metafile = true
 
 [[files]]
 file = "mods/hybrid-aquatic.pw.toml"
-hash = "6798193cba4ef9bc2bcc58bd9e2bdfa27d7f652a91a55f07b84e24e22445264f"
+hash = "371ece4e1ade947fd879e0a056d641e1047daf584ef57b7df7ceb45c5d4f942c"
 metafile = true
 
 [[files]]
@@ -2588,7 +2588,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "8cf199fbfa45f1a3e05f7059c56dfb4dbfc5dcd6615b82434f6608ab5445001a"
+hash = "8735b4a90a4c59db419973991b87ab294c12f7ba869a362ef87ec192ef379b0a"
 metafile = true
 
 [[files]]
@@ -2762,6 +2762,11 @@ hash = "bca4d23861040d069b25d0e4bb0c2c763a4e4f54ac51b513c22462253e8cd340"
 metafile = true
 
 [[files]]
+file = "mods/modflared.pw.toml"
+hash = "d88854237dd44470818cdc37e9e50d9ecae53406894fda5eb297ab91c51634ed"
+metafile = true
+
+[[files]]
 file = "mods/monolib.pw.toml"
 hash = "11fb01369bb143bcf8ff4cba665ba9583f9b66e7fd17103ae36e52cc934a05d1"
 metafile = true
@@ -2928,7 +2933,7 @@ metafile = true
 
 [[files]]
 file = "mods/quark.pw.toml"
-hash = "76640f19ee98586dc9283cced28acbf021a587944830ec67a80c92181a65b12f"
+hash = "719c1b11d3c9f3204f85a36815b298e84aad29c2e98ec77eb0a07d1ba2783eff"
 metafile = true
 
 [[files]]
@@ -2978,7 +2983,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "d318efaa5190d251642c7a6de7f327a35d32a587bc72ec2c180603e72563c9e7"
+hash = "27ad34a1525e191550a51dcc4d19eede2e3e8ec37f983e3dc798e40d1449bca1"
 metafile = true
 
 [[files]]
@@ -3023,7 +3028,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "c379295c0754112a5a7b83bd0dab3a9125260f58c1d2805a6b10959019eeabe7"
+hash = "6d814cb2fe047fb85fc51190ef5217dfd468afea0865565767dae445b98dc174"
 metafile = true
 
 [[files]]
@@ -3043,7 +3048,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "4bdabbc8a7e16df7251c18546a7b8930c04ef75f955ace075b93ba4148abdb9a"
+hash = "9894d64f7a94f2f6467f6f2e537332dd287b77c293d35797b39ab5b3a00b0149"
 metafile = true
 
 [[files]]
@@ -3068,7 +3073,7 @@ metafile = true
 
 [[files]]
 file = "mods/steam-n-rails-neoforge.pw.toml"
-hash = "7e3bead730c077ab6ff936e48ec95c9d0ce89bb0bb4b1dfcd9d76a7f01b0bd3f"
+hash = "d452fac667bc125262ec97a16c71275bd4b8bde26101a67508ee3fb2e4e68306"
 metafile = true
 
 [[files]]
@@ -3098,7 +3103,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "34ef88b3e43662d1c2a8c5189003b7d4d471fe9909cd162849d13e9f770da50c"
+hash = "04b3be3c277aae9b433691018e1d0dfc35f883356d539da58c8e8186f6a038ca"
 metafile = true
 
 [[files]]

@@ -32,7 +32,7 @@
     "side": "both"
   },
   "Amendments": {
-    "filename": "amendments-neoforge-1.21-2.1.5.jar",
+    "filename": "amendments-neoforge-1.21-2.1.7.jar",
     "side": "both"
   },
   "AppleSkin": {
@@ -76,7 +76,7 @@
     "side": "both"
   },
   "AstikorCarts Redux": {
-    "filename": "astikorcartsredux-1.2.2.jar",
+    "filename": "astikorcartsredux-1.2.3.jar",
     "side": "both"
   },
   "BadOptimizations": {
@@ -508,7 +508,7 @@
     "side": "both"
   },
   "Hybrid Aquatic": {
-    "filename": "[1.21.1-Neoforge] Hybrid Aquatic 1.5.5.jar",
+    "filename": "[1.21.1-Neoforge] Hybrid Aquatic 1.6.6.jar",
     "side": "both"
   },
   "Iceberg [Neo/Forge]": {
@@ -552,7 +552,7 @@
     "side": "both"
   },
   "Just Enough Items (JEI)": {
-    "filename": "jei-1.21.1-neoforge-19.36.0.360.jar",
+    "filename": "jei-1.21.1-neoforge-19.38.0.366.jar",
     "side": "both"
   },
   "Just Enough Professions (JEP)": {
@@ -691,6 +691,10 @@
     "filename": "modernfix-neoforge-5.27.15+mc1.21.1.jar",
     "side": "both"
   },
+  "Modflared": {
+    "filename": "modflared-1.2.2+release.81.jar",
+    "side": "both"
+  },
   "MonoLib": {
     "filename": "monolib-neoforge-1.21.1-4.0.2.jar",
     "side": "both"
@@ -824,7 +828,7 @@
     "side": "both"
   },
   "Quark": {
-    "filename": "Quark-4.1-481.jar",
+    "filename": "Quark-4.1-482.jar",
     "side": "both"
   },
   "Random Mob Sizes": {
@@ -864,7 +868,7 @@
     "side": "both"
   },
   "Moonlight Lib": {
-    "filename": "moonlight-neoforge-1.21.1-3.0.22.jar",
+    "filename": "moonlight-neoforge-1.21.1-3.1.0.jar",
     "side": "both"
   },
   "Simple Music Control": {
@@ -900,7 +904,7 @@
     "side": "both"
   },
   "Sophisticated Core": {
-    "filename": "sophisticatedcore-1.21.1-1.4.70.2131.jar",
+    "filename": "sophisticatedcore-1.21.1-1.4.72.2136.jar",
     "side": "both"
   },
   "Sophisticated Item Actions": {
@@ -916,7 +920,7 @@
     "side": "both"
   },
   "Sophisticated Storage": {
-    "filename": "sophisticatedstorage-1.21.1-1.5.71.1949.jar",
+    "filename": "sophisticatedstorage-1.21.1-1.5.73.1960.jar",
     "side": "both"
   },
   "Sound Physics Remastered": {
@@ -936,7 +940,7 @@
     "side": "both"
   },
   "Steam 'n' Rails Neoforge": {
-    "filename": "railways-0.3.0-alpha.2+neoforge-mc1.21.1.jar",
+    "filename": "railways-0.3.0-beta+neoforge-mc1.21.1.jar",
     "side": "both"
   },
   "Every Compat (Stone Zone)": {
@@ -960,7 +964,7 @@
     "side": "both"
   },
   "Supplementaries": {
-    "filename": "supplementaries-neoforge-1.21.1-3.7.7.jar",
+    "filename": "supplementaries-neoforge-1.21.1-3.8.0.jar",
     "side": "both"
   },
   "TerraBlender (NeoForge)": {

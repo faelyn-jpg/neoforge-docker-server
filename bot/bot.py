@@ -205,6 +205,9 @@ async def handle_idle_server(target_server):
     if idle_counts[target_server] >= 5:
         idle_counts[target_server] = 0
         client.containers.get(target_server).stop(timeout=30)
+        channel = bot.get_channel(command_channel_id)
+        if isinstance(channel, discord.TextChannel):
+            await channel.send(f"The {target_server} server has gone offline due to inactivity.")
         return "stop server"
 
 async def shutdown():

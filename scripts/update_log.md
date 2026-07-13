@@ -18,3 +18,8 @@ SodiumExtrasAPI incompatible with Sable/Sodium/Create update
 
 ### Notes
 fix datapack
+
+## 1.0.7 — 2026-07-13 22:05
+
+### Notes
+fix datapack
