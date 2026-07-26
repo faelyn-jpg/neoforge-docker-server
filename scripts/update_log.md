@@ -37,3 +37,10 @@ revert hybrid aquatic
 
 ### Notes
 revert hybrid aquatic
+
+## 1.0.8 — 2026-07-26 14:31
+### Updated
+- Crash Assistant (client): CrashAssistant-neoforge-1.20.6-1.21.4-1.11.10.jar → CrashAssistant-neoforge-1.20.6-1.21.4-1.11.11.jar
+
+### Notes
+revert hybrid aquatic
