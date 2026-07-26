@@ -4,6 +4,7 @@ from discord import app_commands
 from dotenv import load_dotenv
 from mcrcon import MCRcon
 from datetime import datetime, timedelta, timezone
+from config import update_villagernames
 import os
 import docker
 import asyncio
@@ -11,8 +12,18 @@ import time
 import json
 import subprocess
 import requests
+import logging
 
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+            logging.FileHandler(os.path.expanduser("~/repos/mc-server/bot/furberbot.log")),
+            logging.StreamHandler()
+        ],
+    )
+log = logging.getLogger("furberbot")
 with open("../config/config.json") as f:
     config = json.load(f)
 
@@ -78,10 +89,13 @@ class MCLoginListener:
                     writer.close()
                     await writer.wait_closed()
                     asyncio.create_task(self.unbind())
-                    asyncio.create_task(start_server(self.container_name))
+                    asyncio.create_task(start_server(
+                        self.container_name,
+                        on_failed=lambda: notify_start_failure(self.container_name)
+                        ))
                     return
         except Exception as e:
-            print(f"Error handling connection: {e}")
+            log.error(f"Error handling connection: {e}")
         finally:
             writer.close()
 
@@ -122,6 +136,11 @@ def build_disconnect(message):
     payload = packet_id + message_data
     return write_varint(len(payload)) + payload
 
+async def notify_start_failure(server_name):
+    channel = bot.get_channel(command_channel_id)
+    if isinstance(channel, discord.TextChannel):
+        await channel.send(f"{server_name} server failed to start after a login attempt. You can try `/start {server_name}` to retry.")
+
 listeners = {
         name: MCLoginListener(config["servers"][name]["mc_port"], name)
         for name in config["servers"]
@@ -137,7 +156,7 @@ def is_plex_active():
         data = response.json()
         return data["MediaContainer"]["size"] > 0
     except Exception as e:
-        print(f'Error determining if plex is active: {e}')
+        log.error(f'Error determining if plex is active: {e}')
         return False
 
 def is_samba_active():
@@ -172,11 +191,10 @@ async def safe_to_shutdown():
     creative_safe = await is_server_empty("creative")
     return not (samba_active or plex_active or users_logged_in or grace_period or server_starting) and survival_safe and creative_safe
 
-
-async def wait_for_server(container, timeout=60):
+async def wait_for_server(container, timeout=120):
     start = time.time()
     while time.time() - start < timeout:
-        logs = container.logs(tail=20).decode("utf-8")
+        logs = container.logs(since=int(start)).decode("utf-8")
         if "Dedicated server took" in logs:
             return True
         await asyncio.sleep(3)
@@ -190,12 +208,12 @@ async def is_server_empty(target_server):
             player_count = int(response.split()[2])
             return player_count == 0
     except Exception as e:
-        print (f' Offline or Unreahable {target_server} server: {e}')
+        log.error(f' Offline or Unreahable {target_server} server: {e}')
         return "offline"
 
 async def handle_idle_server(target_server):
     server_empty = await is_server_empty(target_server)
-    print(f"{target_server} empty: {server_empty}, idle count: {idle_counts[target_server]}")
+    log.info(f"{target_server} empty: {server_empty}, idle count: {idle_counts[target_server]}")
     if server_empty == "offline": 
         return
     elif server_empty:
@@ -220,13 +238,13 @@ async def poll_survival():
     try:
         await handle_idle_server("survival")
     except Exception as e:
-        print(f' Error polling survival: {e}')
+        log.info(f' Error polling survival: {e}')
 
 async def poll_creative():
     try:
         await handle_idle_server("creative")
     except Exception as e:
-        print(f' Error polling creative: {e}')
+        log.info(f' Error polling creative: {e}')
 
 @tasks.loop(seconds=300)
 async def poll():
@@ -238,11 +256,11 @@ async def poll():
             if container.status == "exited" and not server_starting and not listener.active:
                 await listener.start()
         shutdown_safe = await safe_to_shutdown()
-        print(f"Safe to shutdown: {shutdown_safe}")
+        log.info(f"Safe to shutdown: {shutdown_safe}")
         if shutdown_safe:
             await shutdown()
     except Exception as e:
-        print(f'Error polling: {e}')
+        log.info(f'Error polling: {e}')
 
 async def check_channel_for_wake(channel_id):
     channel = bot.get_channel(channel_id)
@@ -257,7 +275,7 @@ async def was_remote_wake():
     try:
         return await check_channel_for_wake(command_channel_id) or await check_channel_for_wake(bot_channel_id)
     except Exception as e:
-        print(f'Error checking if remote wake: {e}')
+        log.info(f'Error checking if remote wake: {e}')
         return False
 
 async def read_queue():
@@ -272,7 +290,7 @@ async def read_queue():
                     await message.delete()
             return pending
     except Exception as e:
-        print(f'Error reading queue: {e}')
+        log.info(f'Error reading queue: {e}')
 
 
 async def start_server(target_server, on_running=None, on_started=None, on_failed=None):
@@ -299,7 +317,7 @@ async def start_server(target_server, on_running=None, on_started=None, on_faile
                 await on_failed()
     except Exception as e:
         server_starting = False
-        print(f'Error starting {target_server}: {e}')
+        log.info(f'Error starting {target_server}: {e}')
 
 async def stop_server(target_server, on_exited=None, on_stop=None, on_failed=None):
     try:
@@ -319,35 +337,67 @@ async def stop_server(target_server, on_exited=None, on_stop=None, on_failed=Non
             if on_stop:
                 await on_stop()
     except Exception as e:
-        print(f'Error stopping {target_server} server: {e}')
+        log.info(f'Error stopping {target_server} server: {e}')
 
 @bot.event
 async def on_ready():
-    print(f"Logged in as {bot.user}")
+    log.info(f"Logged in as {bot.user}")
     global remote_wake
     remote_wake = await was_remote_wake()
     await listeners["survival"].start()
     await listeners["creative"].start()
     try:
         synced = await bot.tree.sync()
-        print(f"Synced {len(synced)} commands")
+        log.info(f"Synced {len(synced)} commands")
         queue = await read_queue()
         if queue and len(queue) > 0:
             for server in queue:
-                await start_server(server)
+                channel = bot.get_channel(command_channel_id)
+                await start_server(
+                    server,
+                    on_running=lambda s=server, c=channel: c.send(f"{s} server is already running!") if isinstance(c, discord.TextChannel) else None,
+                    on_started=lambda s=server, c=channel: c.send(f"{s} server is online! Have fun :D") if isinstance(c, discord.TextChannel) else None,
+                    on_failed=lambda s=server, c=channel: c.send(f"{s} server failed to start...") if isinstance(c, discord.TextChannel) else None,
+                )
         poll.start()
     except Exception as e:
-        print(f'Error initialising bot: {e}')
+        log.error(f'Error initialising bot: {e}')
 
-@bot.tree.command(name="status", description="Check the survival server status")
-async def status(interaction: discord.Interaction):
+@bot.tree.command(name="addvillagername", description="Add a new potential villager name(s) to the list")
+@app_commands.describe(names="Name or comma-separated list of names to add")
+async def addvillagername(interaction: discord.Interaction, names: str):
     try:
-        with MCRcon("127.0.0.1", os.getenv("RCON_PASSWORD"), port=25575) as rcon:
-            response = rcon.command("list")
-            await interaction.response.send_message(f"Server is online!\n{response}")
+        unique, duplicates, invalid = update_villagernames(names)
+        response = ""
+        if unique:
+            response += f"Added: {', '.join(unique)}\n"
+        if duplicates:
+            response += f"Already in list: {', '.join(duplicates)}\n"
+        if invalid:
+            response += f"Invalid formatting: {', '.join(invalid)}\n"
+        if unique:
+            response += "Names will appear after the next server restart! :3"
+        if not unique:
+            response = "No valid names provided."
+        await interaction.response.send_message(response)
     except Exception as e:
-        print(e)
-        await interaction.response.send_message(f"Server is offline or unreachable. You can use /start (server name) to turn it on :D")
+        log.error(e)
+        await interaction.response.send_message("Something went wrong adding the names...")
+
+@bot.tree.command(name="status", description="Check the status of Minecraft servers")
+async def status(interaction: discord.Interaction):
+    messages = []
+    for server in config["servers"]:
+        port = config["servers"][server]["rcon_port"]
+        try:
+            with MCRcon("127.0.0.1", os.getenv("RCON_PASSWORD"), port=port) as rcon:
+                response = rcon.command("list")
+                messages.append(f"**{server.capitalize()}** is online!\n{response}")
+        except Exception as e:
+            log.info(e)
+            messages.append(f"**{server.capitalize()}** is offline or unreachable. Use `/start {server}` to turn it on.")
+    await interaction.response.send_message("\n\n".join(messages))
+
 
 @bot.tree.command(name="start", description="Start a server")
 @app_commands.describe(target_server="Which server to start (default: survival)")
@@ -365,7 +415,7 @@ async def start(interaction: discord.Interaction, target_server: str = "survival
             on_failed=lambda: interaction.followup.send(f"Server failed to start in time....")
             )
     except Exception as e:
-        print(e)
+        log.info(e)
         await interaction.followup.send(f"Oops! Something went wrong....")
 
 @bot.tree.command(name="stop", description="Stop a server")
@@ -386,7 +436,7 @@ async def stop(interaction: discord.Interaction, target_server: str = "survival"
             await interaction.response.send_message(f"Stopping {target_server} server.")
             container.stop(timeout=60)
     except Exception as e:
-        print(e)
+        log.info(e)
         await interaction.response.send_message(f"Oops! Something went wrong.")
 
 @bot.tree.command(name="disable-shutdown", description="Disable automatic shutdown")

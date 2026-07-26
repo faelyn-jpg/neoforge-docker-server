@@ -2342,6 +2342,11 @@ hash = "4bf529c0b36ea0e8e01dc12e80f69a703948d28f7587460526ff0a1330f9e891"
 metafile = true
 
 [[files]]
+file = "mods/distant-horizons.pw.toml"
+hash = "09864f2ac245c61be0d3865fc4dc873e55ffe39f75abc78d7b9f033a0e4ed755"
+metafile = true
+
+[[files]]
 file = "mods/doped-horses.pw.toml"
 hash = "989957cafbfd4801afd0a8b74fa519e933625a254635ddbfa006e1c2c135e745"
 metafile = true
