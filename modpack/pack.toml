@@ -1,12 +1,12 @@
 name = "Furber"
 author = "faelynjpg"
-version = "1.0.8"
+version = "1.0.9"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "8b3ca1cce17cdd4430b92a2cf8c6cf8c9bca7916b30a6965132b3ccda1df7f84"
+hash = "3d9e5d21a43c821f09ff852bb8c9bd804be93225c5393b8d60b60a87d708d9b1"
 
 [versions]
 minecraft = "1.21.1"

@@ -1,13 +1,13 @@
 name = "GraveStone Mod"
-filename = "gravestone-neoforge-1.21.1-1.0.37.jar"
+filename = "gravestone-neoforge-1.21.1-1.0.38.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "4120452fb038e7781367774a10093c8767cc4c1b"
+hash = "2b6d5ff95bb80d811eac78d0556ee384125bca9d"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8056307
+file-id = 8540853
 project-id = 238551

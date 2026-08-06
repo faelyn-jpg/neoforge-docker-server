@@ -1,13 +1,13 @@
 name = "Fowl Play"
-filename = "fowlplay-1.2.1+1.21.1-neoforge.jar"
+filename = "fowlplay-1.2.3+1.21.1-neoforge.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "9aaa7cb3e5e8c6c86631c4f391e7a61e83b12ef9"
+hash = "6c2d872bb014c84d8bd0f892140928d8f278764b"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8344206
+file-id = 8578477
 project-id = 1246320

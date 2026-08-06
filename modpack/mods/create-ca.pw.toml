@@ -1,0 +1,13 @@
+name = "Create: Components and Additions"
+filename = "Create Components and Additions 2.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "70ae0f497c282a5a2392596004be9afd1c25297d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8239315
+project-id = 833501
