@@ -19,61 +19,27 @@ REPO_DIR = Path(__file__).parent.parent
 MODS_DIR = REPO_DIR / "worlds/shared"
 LOG_PATH = SCRIPTS_DIR / "update_log.md"
 PACKWIZ_BOOTSTRAP = SCRIPTS_DIR / "packwiz-installer-bootstrap.jar"
+SERVER_NAMES = ["survival", "creative"]
 
 
-print("Stopping FurberBot...")
-subprocess.run(["sudo", "systemctl", "stop", "furberbot"])
+def get_live_version(bcc_path):
+    if not bcc_path.exists():
+        return None
+    with open(bcc_path) as f:
+        content = f.read()
+    match = re.search(r'modpackVersion = "(.*?)"', content)
+    return match.group(1) if match else None
 
-if not CHANGELOG_PATH.exists():
-    print("No pending update found (last_changelog.json missing!)")
-    exit(1)
-with open(CHANGELOG_PATH) as f:
-    saved = json.load(f)
-new_version = saved["version"]
-changelog = saved["changelog"]
-
-print(f"Applying server update to version {new_version}!")
-print(f"\nChangelog:\n{changelog}\n")
-confirm = input("Proceed? (y/n): ").strip().lower()
-if confirm != "y":
-    print("Aborted")
-    exit(0)
-
-docker_client = docker.from_env()
-try:   
-    container = docker_client.containers.get("survival")
-    if container.status == "running":
-        print("WARNING: Survival server is currently running!")
-        confirm = input("Stop server and apply update? (y/n): ").strip().lower()
-        if confirm != "y":
-            print("Aborted")
-            exit(0)
-        container.stop(timeout=60)
-        print("Server stopped")
-except docker_errors.NotFound:
-    print("Survival container not found, continuing...")
-
-print("Starting packwiz serve...")
-serve_process = subprocess.Popen(
-    ["packwiz", "serve"],
-    cwd=MODPACK_DIR,
-    stdout=subprocess.DEVNULL,
-    stderr=subprocess.DEVNULL
-)
-time.sleep(2)
-if serve_process.poll() is not None:
-    print("ERROR: packwiz serve failed to start!")
-    exit(1)
-print("packwiz serve is running")
 
 def run_packwiz_installer():
     print("Running packwiz-installer...")
     return subprocess.run([
         "java", "-jar", str(PACKWIZ_BOOTSTRAP),
         "-g", "-s", "server",
-        f"http://localhost:8080/pack.toml",
+        "http://localhost:8080/pack.toml",
         "--pack-folder", str(MODS_DIR)
     ], capture_output=True, text=True)
+
 
 def handle_manual_downloads(log_output):
     pattern = r'Please go to (https://\S+) and save this file to (\S+\.jar)'
@@ -83,7 +49,7 @@ def handle_manual_downloads(log_output):
     seen = set()
     unique = [(url, path) for url, path in downloads if url not in seen and not seen.add(url)]
     print(f"\n{len(unique)} mods need manual downloading:")
-    for url, container_path in unique: 
+    for url, container_path in unique:
         filename = container_path.split("/")[-1]
         dest = MODS_DIR / filename
         print(f"\n {filename}")
@@ -91,52 +57,118 @@ def handle_manual_downloads(log_output):
         webbrowser.open(url)
     input("\nDownload all files to the listed locations, then press Enter to retry...")
     return True
+
+
+if not CHANGELOG_PATH.exists():
+    print("No pending update found (last_changelog.json missing!)")
+    exit(1)
+with open(CHANGELOG_PATH) as f:
+    saved = json.load(f)
+new_version = saved["version"]
+changelog = saved["changelog"]
+
+
+live_version = get_live_version(BCC_CONFIG)
+if live_version == new_version:
+    print(f"Live server already reports modpackVersion {new_version} — this may already be applied.")
+    resp = input("Continue anyway and resync mods? (y/n): ").strip().lower()
+    if resp != "y":
+        print("Aborted")
+        exit(0)
+
+print(f"Applying server update to version {new_version}!")
+print(f"\nChangelog:\n{changelog}\n")
+confirm = input("Proceed? (y/n): ").strip().lower()
+if confirm != "y":
+    print("Aborted")
+    exit(0)
+
+docker_client = docker.from_env()
+for server_name in SERVER_NAMES:
+    try:
+        container = docker_client.containers.get(server_name)
+        if container.status == "running":
+            print(f"WARNING: {server_name.capitalize()} server is currently running!")
+            resp = input(f"Stop {server_name} and apply update? (y/n): ").strip().lower()
+            if resp != "y":
+                print("Aborted")
+                exit(0)
+            container.stop(timeout=60)
+            print(f"{server_name.capitalize()} server stopped")
+    except docker_errors.NotFound:
+        print(f"{server_name.capitalize()} container not found, continuing...")
+
+
+print("Stopping FurberBot...")
+subprocess.run(["sudo", "systemctl", "stop", "furberbot"])
+
 try:
-    install_result = run_packwiz_installer()
-    print(install_result.stdout)
-    print(install_result.stderr)
-    logs = install_result.stdout + install_result.stderr
+    print("Starting packwiz serve...")
+    serve_process = subprocess.Popen(
+        ["packwiz", "serve"],
+        cwd=MODPACK_DIR,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL
+    )
+    time.sleep(2)
+    if serve_process.poll() is not None:
+        print("ERROR: packwiz serve failed to start!")
+        exit(1)
+    print("packwiz serve is running")
 
-    if install_result.returncode != 0:
-        had_manual = handle_manual_downloads(logs)
-        if had_manual:
-            install_result = run_packwiz_installer()
-            print(install_result.stdout)
-            print(install_result.stderr)
-            if install_result.returncode != 0:
-                print("Still failing after manual downloads")
-                serve_process.terminate()
+    try:
+        install_result = run_packwiz_installer()
+        print(install_result.stdout)
+        print(install_result.stderr)
+        logs = install_result.stdout + install_result.stderr
+
+        if install_result.returncode != 0:
+            had_manual = handle_manual_downloads(logs)
+            if had_manual:
+                install_result = run_packwiz_installer()
+                print(install_result.stdout)
+                print(install_result.stderr)
+                if install_result.returncode != 0:
+                    print("Still failing after manual downloads")
+                    exit(1)
+            else:
+                print("Failed with no manual downloads needed:")
+                print(logs)
                 exit(1)
+
+        print(f"Updating bcc-common.toml to {new_version}...")
+        with open(BCC_CONFIG, "r") as f:
+            content = f.read()
+            new_content, match_count = re.subn(
+            r'modpackVersion = ".*?"', f'modpackVersion = "{new_version}"', content
+        )
+        if match_count == 0:
+            print(f"WARNING: no modpackVersion field found in {BCC_CONFIG} — file left unchanged.")
         else:
-            print("Failed with no manual downloads needed:")
-            print(logs)
-            serve_process.terminate()
-            exit(1)
+            with open(BCC_CONFIG, "w") as f:
+                f.write(new_content)
+            print("bcc-common.toml updated")
 
-    print(f"Updating bcc-common.toml to {new_version}...")
-    with open(BCC_CONFIG, "r") as f:
-        content = f.read()
-    content = re.sub(r'modpackVersion = ".*?"', f'modpackVersion = "{new_version}"', content)
-    with open(BCC_CONFIG, "w") as f:
-        f.write(content)
-    print("bcc-common.toml updated")
+        with open(LOG_PATH, "a") as f:
+            f.write(f"\n## {new_version} — {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
+            f.write(changelog)
+            f.write("\n")
+        print("Log entry written")
 
+        subprocess.run(["git", "add", "."], cwd=REPO_DIR)
+        commit_result = subprocess.run(["git", "commit", "-m", f"update modpack to {new_version}"], cwd=REPO_DIR)
+        if commit_result.returncode != 0:
+            print("Note: git commit reported an issue (e.g. nothing to commit) — see output above.")
+        push_result = subprocess.run(["git", "push"], cwd=REPO_DIR)
+        if push_result.returncode != 0:
+            print("WARNING: git push failed — changes are committed locally but NOT pushed. Push manually.")
+        else:
+            print("Changes committed and pushed")
+        print("Done!")
+    finally:
+        serve_process.terminate()
+        serve_process.wait()
+        print("packwiz serve stopped")
+finally:
     print("Starting FurberBot...")
     subprocess.run(["sudo", "systemctl", "start", "furberbot"])
-
-    with open(LOG_PATH, "a") as f:
-        f.write(f"\n## {new_version} — {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
-        f.write(changelog)
-        f.write("\n")
-    print("Log entry written")
-
-    subprocess.run(["git", "add", "."], cwd=REPO_DIR)
-    subprocess.run(["git", "commit", "-m", f"update modpack to {new_version}"], cwd=REPO_DIR)
-    subprocess.run(["git", "push"], cwd=REPO_DIR)
-    print("Changes committed and pushed")
-    print("Done!")
-finally:
-    serve_process.terminate()
-    serve_process.wait()
-    print("packwiz serve stopped")
-  
