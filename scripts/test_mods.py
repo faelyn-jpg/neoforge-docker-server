@@ -102,12 +102,14 @@ def upload_to_curseforge(zip_path, version, changelog):
         print(f"Upload failed: {response.status_code} {response.text}")
         exit(1)
 
-def get_zip_path():
-    zip_files = list(MODPACK_DIR.glob("*.zip"))
-    if not zip_files:
-        print("No zip found")
+def get_zip_path(version):
+    zip_path = MODPACK_DIR / f"Furber-{version}.zip"
+    if not zip_path.exists():
+        existing = [p.name for p in MODPACK_DIR.glob("*.zip")]
+        print(f"Expected zip not found: {zip_path.name}")
+        if existing:
+            print(f"Zips present in {MODPACK_DIR}: {', '.join(existing)}")
         exit(1)
-    zip_path = zip_files[0]
     print(f"Found zip: {zip_path.name}")
     return zip_path
 
@@ -132,5 +134,3 @@ def save_baseline():
     with open(SCRIPTS_DIR / "baseline_mods.json", "w") as f:
         json.dump(baseline, f, indent=2)
     print(f"Baseline saved with {len(baseline)} mods")
-
-
