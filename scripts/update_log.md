@@ -106,3 +106,11 @@ revert hybrid aquatic
 
 ### Notes
 oops
+
+## 1.0.10 — 2026-08-07 19:39
+
+### Added
+- Create: Connected (both): create_connected-1.3.2-mc1.21.1.jar
+
+### Notes
+oopsie i messed up the last update changelog

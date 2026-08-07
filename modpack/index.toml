@@ -578,7 +578,7 @@ hash = "cae5ba66971b2f61e0b523c5aeb8b8d4fa806f0bea8a1709860e4fea94426ac9"
 
 [[files]]
 file = "config/bcc-common.toml"
-hash = "cd41d46b5bd0ff35d9eaa1f22ed8e88c6951954a6ddadfe3d50cc718415320df"
+hash = "27860ec0644c2f5ebff3e328e0e284b0df25e829693843df53f7d9a957d1d532"
 
 [[files]]
 file = "config/betterchunkloading.json"
@@ -2179,6 +2179,11 @@ metafile = true
 [[files]]
 file = "mods/create-confectionery.pw.toml"
 hash = "421fe3905c6a32fbcc3e102dccbde7ee9dc43076c43cab25b0806f1e6b6726b7"
+metafile = true
+
+[[files]]
+file = "mods/create-connected.pw.toml"
+hash = "e3304daa476fa3ac90a018720d190fd366cf6e20e9ce33b5aa8d16b40eaf3446"
 metafile = true
 
 [[files]]

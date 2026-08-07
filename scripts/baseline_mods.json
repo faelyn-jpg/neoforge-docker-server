@@ -227,6 +227,10 @@
     "filename": "create-confectionery1.21.1_v1.1.3b.jar",
     "side": "both"
   },
+  "Create: Connected": {
+    "filename": "create_connected-1.3.2-mc1.21.1.jar",
+    "side": "both"
+  },
   "Create: Continuum (Vanilla Backport Integration)": {
     "filename": "create_continuum-1.0.0-1.21.1-neoforge.jar",
     "side": "both"
